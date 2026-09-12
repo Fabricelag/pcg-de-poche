@@ -1,7 +1,9 @@
-# Publie le dossier app/ sur GitHub Pages.
-# Déclenchement manuel tant que Pages n'est pas activé sur le dépôt ; passer ensuite sur "push".
+# Publie le dossier app/ sur GitHub Pages à chaque push sur main (ou à la demande).
 name: Publier sur GitHub Pages
 on:
+  push:
+    branches: [main]
+    paths: ["app/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,6 +1,6 @@
 /* PCG de poche — service worker : tout est mis en cache à l'installation, l'application fonctionne hors ligne.
    La ligne VERSION est réécrite par scripts/build.py à chaque construction ; un changement déclenche la mise à jour. */
-const VERSION = "ea6da66c8e";
+const VERSION = "a8f7b84741";
 const CACHE = "pcg-" + VERSION;
 const ASSETS = [
   "./", "./index.html", "./installer.html", "./styles.css", "./app.js", "./data.js", "./fonts.css",
