@@ -5670,6 +5670,604 @@
    "78662"
   ]
  },
+ "31": {
+  "i": "Stock de matières premières et fournitures qui entrent dans la composition de ce que vous fabriquez, compté à l'inventaire. La variation entre l'ouverture et la clôture passe par le 6031.",
+  "k": [
+   "stock",
+   "inventaire",
+   "stock initial",
+   "stock final",
+   "matières à transformer"
+  ],
+  "nc": [
+   [
+    "601",
+    "les achats de matières de l'exercice"
+   ],
+   [
+    "32",
+    "consommables qui n'entrent pas dans le produit"
+   ],
+   [
+    "37",
+    "marchandises revendues en l'état"
+   ]
+  ],
+  "rel": [
+   "601",
+   "6031",
+   "391"
+  ]
+ },
+ "32": {
+  "i": "Stock des autres approvisionnements : matières consommables, fournitures, combustibles, emballages, consommés sans entrer dans la composition du produit. Variation par le 6032.",
+  "k": [
+   "stock",
+   "consommables",
+   "fournitures stockées",
+   "inventaire",
+   "emballages"
+  ],
+  "nc": [
+   [
+    "31",
+    "matières qui entrent dans le produit fabriqué"
+   ],
+   [
+    "606",
+    "fournitures non stockées, passées directement en charge"
+   ]
+  ],
+  "rel": [
+   "602",
+   "6032",
+   "392"
+  ]
+ },
+ "321": {
+  "i": "Stock de matières consommables : produits qui participent à la fabrication sans se retrouver dans le produit fini, comme les lubrifiants, les abrasifs ou les produits de traitement.",
+  "k": [
+   "consommables",
+   "lubrifiant",
+   "stock",
+   "inventaire"
+  ],
+  "nc": [
+   [
+    "31",
+    "matières qui se retrouvent dans le produit fini"
+   ],
+   [
+    "322",
+    "fournitures consommables"
+   ]
+  ],
+  "rel": [
+   "6021",
+   "3921",
+   "6032"
+  ]
+ },
+ "322": {
+  "i": "Stock de fournitures consommables : combustibles, produits d'entretien, fournitures d'atelier, de magasin ou de bureau, quand vous les suivez en stock.",
+  "k": [
+   "fournitures",
+   "consommables",
+   "stock",
+   "inventaire"
+  ],
+  "nc": [
+   [
+    "606",
+    "les mêmes fournitures achetées sans tenue de stock"
+   ],
+   [
+    "321",
+    "matières consommables de production"
+   ]
+  ],
+  "rel": [
+   "6022",
+   "3922"
+  ]
+ },
+ "3221": {
+  "i": "Stock de combustibles compté à l'inventaire : fioul, gaz, charbon, carburant conservé en cuve.",
+  "k": [
+   "fioul",
+   "gaz",
+   "carburant",
+   "cuve",
+   "stock"
+  ],
+  "nc": [
+   [
+    "6061",
+    "carburant et énergie achetés sans stockage"
+   ]
+  ],
+  "rel": [
+   "60221"
+  ]
+ },
+ "3222": {
+  "i": "Stock de produits d'entretien et de nettoyage, quand vous en suivez les quantités en stock plutôt que de les passer directement en charge.",
+  "k": [
+   "nettoyage",
+   "détergent",
+   "stock",
+   "inventaire"
+  ],
+  "nc": [
+   [
+    "6063",
+    "produits d'entretien achetés et consommés sans stock"
+   ]
+  ],
+  "rel": [
+   "60222"
+  ]
+ },
+ "3223": {
+  "i": "Stock de fournitures d'atelier et d'usine : petites pièces, visserie, consommables de production, gants et protections.",
+  "k": [
+   "visserie",
+   "pièces",
+   "consommables de production",
+   "stock",
+   "atelier"
+  ],
+  "nc": [
+   [
+    "2155",
+    "l'outillage durable, immobilisé"
+   ],
+   [
+    "6063",
+    "petit matériel acheté et passé en charge"
+   ]
+  ],
+  "rel": [
+   "60223"
+  ]
+ },
+ "3224": {
+  "i": "Stock de fournitures de magasin : sacs, étiquettes, papier d'emballage, consommables du point de vente.",
+  "k": [
+   "sacs",
+   "étiquettes",
+   "point de vente",
+   "stock",
+   "boutique"
+  ],
+  "nc": [
+   [
+    "326",
+    "les emballages proprement dits"
+   ]
+  ],
+  "rel": [
+   "60224"
+  ]
+ },
+ "3225": {
+  "i": "Stock de fournitures de bureau suivies en stock : papier, cartouches, enveloppes, classeurs. Le plus souvent, elles sont passées directement en charge.",
+  "k": [
+   "papeterie",
+   "papier",
+   "cartouche",
+   "stock",
+   "inventaire"
+  ],
+  "nc": [
+   [
+    "6064",
+    "fournitures de bureau passées directement en charge, cas courant"
+   ]
+  ],
+  "rel": [
+   "60225"
+  ]
+ },
+ "326": {
+  "i": "Stock d'emballages : perdus (livrés avec la marchandise), récupérables non identifiables ou à usage mixte. Les emballages récupérables identifiables sont, eux, des immobilisations.",
+  "k": [
+   "cartons",
+   "bouteilles",
+   "palettes",
+   "casiers",
+   "consigne",
+   "stock"
+  ],
+  "nc": [
+   [
+    "2186",
+    "emballages récupérables identifiables, immobilisés"
+   ],
+   [
+    "4196",
+    "consignes facturées aux clients"
+   ]
+  ],
+  "rel": [
+   "6026",
+   "3926"
+  ]
+ },
+ "3261": {
+  "i": "Stock d'emballages perdus, vendus avec la marchandise et non repris : cartons, bouteilles, boîtes, films, sacs.",
+  "k": [
+   "cartons",
+   "boîtes",
+   "film",
+   "emballage jetable",
+   "stock"
+  ],
+  "nc": [
+   [
+    "3265",
+    "emballages qui reviennent chez vous"
+   ]
+  ],
+  "rel": [
+   "60261"
+  ]
+ },
+ "3265": {
+  "i": "Stock d'emballages consignés ou prêtés qui reviennent, mais qu'on ne peut pas suivre individuellement : casiers, palettes, bouteilles consignées.",
+  "k": [
+   "casiers",
+   "palettes",
+   "bouteilles consignées",
+   "consigne",
+   "stock"
+  ],
+  "nc": [
+   [
+    "2186",
+    "emballages récupérables identifiables, immobilisés"
+   ],
+   [
+    "3261",
+    "emballages perdus, qui ne reviennent pas"
+   ]
+  ],
+  "rel": [
+   "60265"
+  ]
+ },
+ "3267": {
+  "i": "Stock d'emballages qui peuvent, selon le cas, être vendus avec la marchandise ou récupérés, sans qu'on sache d'avance lequel.",
+  "k": [
+   "emballage mixte",
+   "consigne",
+   "stock",
+   "inventaire"
+  ],
+  "nc": [
+   [
+    "3261",
+    "emballages toujours perdus"
+   ],
+   [
+    "3265",
+    "emballages toujours récupérés"
+   ]
+  ],
+  "rel": [
+   "60267"
+  ]
+ },
+ "33": {
+  "i": "Biens en cours de fabrication à la clôture, pas encore terminés, valorisés au coût de production engagé. La variation passe par le 7133, en produits.",
+  "k": [
+   "en-cours",
+   "production en cours",
+   "inventaire",
+   "coût de production",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "34",
+    "en-cours de services : études, prestations"
+   ],
+   [
+    "35",
+    "produits terminés"
+   ]
+  ],
+  "rel": [
+   "7133",
+   "393"
+  ]
+ },
+ "331": {
+  "i": "Produits en cours de fabrication à l'inventaire : commencés, pas terminés, valorisés au coût déjà engagé. Variation par le 71331.",
+  "k": [
+   "en-cours",
+   "fabrication en cours",
+   "inventaire",
+   "coût engagé"
+  ],
+  "nc": [
+   [
+    "335",
+    "travaux en cours, chantiers"
+   ],
+   [
+    "351",
+    "produits terminés à un stade intermédiaire"
+   ]
+  ],
+  "rel": [
+   "71331",
+   "3931"
+  ]
+ },
+ "335": {
+  "i": "Travaux en cours à la clôture : chantiers ou ouvrages commencés et non terminés, valorisés au coût engagé. Variation par le 71335.",
+  "k": [
+   "chantier en cours",
+   "BTP",
+   "avancement",
+   "en-cours",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "4181",
+    "travaux terminés mais pas encore facturés"
+   ],
+   [
+    "704",
+    "les travaux facturés au client"
+   ]
+  ],
+  "rel": [
+   "71335",
+   "3935"
+  ]
+ },
+ "34": {
+  "i": "Services en cours d'exécution à la clôture : études et prestations commencées, non terminées, valorisées au coût engagé. Variation par le 7134, en produits.",
+  "k": [
+   "en-cours",
+   "prestation en cours",
+   "inventaire",
+   "coût engagé",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "33",
+    "en-cours de fabrication de biens"
+   ],
+   [
+    "4181",
+    "prestation terminée, non encore facturée"
+   ]
+  ],
+  "rel": [
+   "7134",
+   "394"
+  ]
+ },
+ "341": {
+  "i": "Études commencées et non achevées à la clôture, réalisées pour des clients, valorisées au coût engagé. Variation par le 71341.",
+  "k": [
+   "en-cours",
+   "étude",
+   "bureau d'études",
+   "inventaire",
+   "coût engagé"
+  ],
+  "nc": [
+   [
+    "705",
+    "les études facturées"
+   ],
+   [
+    "203",
+    "recherche et développement pour vos propres besoins"
+   ]
+  ],
+  "rel": [
+   "71341",
+   "3941"
+  ]
+ },
+ "345": {
+  "i": "Prestations de services commencées et non terminées à la clôture : missions, dossiers, contrats en cours, valorisés au coût engagé. Variation par le 71345.",
+  "k": [
+   "mission en cours",
+   "dossier en cours",
+   "prestation non terminée",
+   "en-cours",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "706",
+    "les prestations facturées"
+   ],
+   [
+    "4181",
+    "prestation achevée mais non facturée"
+   ]
+  ],
+  "rel": [
+   "71345",
+   "3945"
+  ]
+ },
+ "35": {
+  "i": "Stock des produits fabriqués par l'entreprise : intermédiaires, finis, résiduels, comptés à l'inventaire. La variation passe par le 7135, en produits, jamais par le 603.",
+  "k": [
+   "stock",
+   "produits fabriqués",
+   "inventaire",
+   "production stockée"
+  ],
+  "nc": [
+   [
+    "37",
+    "marchandises achetées pour être revendues"
+   ],
+   [
+    "33",
+    "produits pas encore terminés"
+   ]
+  ],
+  "rel": [
+   "7135",
+   "395"
+  ]
+ },
+ "351": {
+  "i": "Produits qui ont atteint un stade de fabrication achevé mais qui doivent encore être transformés ou incorporés dans un produit fini.",
+  "k": [
+   "semi-fini",
+   "stock",
+   "inventaire",
+   "stade intermédiaire"
+  ],
+  "nc": [
+   [
+    "355",
+    "produits terminés, prêts à vendre"
+   ],
+   [
+    "331",
+    "produits en cours de fabrication"
+   ]
+  ],
+  "rel": [
+   "71351",
+   "3951",
+   "702"
+  ]
+ },
+ "355": {
+  "i": "Stock des produits terminés, prêts à être vendus, valorisés au coût de production. Variation par le 71355.",
+  "k": [
+   "stock",
+   "inventaire",
+   "fabrication",
+   "coût de production",
+   "produits terminés"
+  ],
+  "nc": [
+   [
+    "37",
+    "marchandises achetées et revendues sans transformation"
+   ],
+   [
+    "351",
+    "produits qui doivent encore être transformés"
+   ]
+  ],
+  "rel": [
+   "71355",
+   "3955",
+   "701"
+  ]
+ },
+ "358": {
+  "i": "Déchets, rebuts et matières de récupération issus de la production, quand ils ont une valeur de revente et qu'on les compte à l'inventaire.",
+  "k": [
+   "déchets",
+   "rebuts",
+   "récupération",
+   "chutes",
+   "stock"
+  ],
+  "nc": [
+   [
+    "355",
+    "produits finis conformes"
+   ]
+  ],
+  "rel": [
+   "71358",
+   "703"
+  ]
+ },
+ "3581": {
+  "i": "Déchets issus de la fabrication qui peuvent être revendus : chutes, copeaux, résidus, ferraille.",
+  "k": [
+   "chutes",
+   "copeaux",
+   "résidus",
+   "ferraille",
+   "stock"
+  ],
+  "nc": [
+   [
+    "3585",
+    "produits ratés ou non conformes"
+   ]
+  ],
+  "rel": [
+   "703"
+  ]
+ },
+ "3585": {
+  "i": "Produits fabriqués non conformes ou ratés, écartés de la vente normale mais qui gardent une valeur : seconds choix, pièces défectueuses.",
+  "k": [
+   "non conforme",
+   "second choix",
+   "défectueux",
+   "stock"
+  ],
+  "nc": [
+   [
+    "3581",
+    "chutes et résidus de fabrication"
+   ]
+  ],
+  "rel": [
+   "703"
+  ]
+ },
+ "3586": {
+  "i": "Matières récupérées lors de la production ou du démontage, réutilisables ou revendables : métaux, pièces, matériaux recyclés.",
+  "k": [
+   "récupération",
+   "recyclage",
+   "métaux",
+   "pièces récupérées",
+   "stock"
+  ],
+  "nc": [
+   [
+    "3581",
+    "déchets vendus tels quels"
+   ]
+  ],
+  "rel": [
+   "703"
+  ]
+ },
+ "36": {
+  "i": "Compte à ouvrir si besoin : immobilisations retirées de l'actif pour être vendues comme des marchandises. Cas peu fréquent, à voir avec le cabinet.",
+  "k": [
+   "immobilisation reclassée",
+   "destinée à la vente",
+   "sortie d'actif",
+   "stock"
+  ],
+  "nc": [
+   [
+    "775",
+    "vente d'une immobilisation, en produit exceptionnel"
+   ],
+   [
+    "37",
+    "marchandises achetées pour la revente"
+   ]
+  ]
+ },
  "37": {
   "i": "Stock de marchandises achetées pour être revendues en l'état, à l'inventaire.",
   "k": [
@@ -5690,6 +6288,300 @@
   "rel": [
    "6037",
    "397"
+  ]
+ },
+ "38": {
+  "i": "Stocks qui vous appartiennent mais ne sont pas dans vos locaux : en cours de transport, mis en dépôt ou en consignation chez un tiers. Compte à ouvrir si besoin, à reclasser à réception.",
+  "k": [
+   "en transit",
+   "en route",
+   "dépôt",
+   "consignation",
+   "transport",
+   "stock chez un tiers"
+  ],
+  "nc": [
+   [
+    "37",
+    "marchandises reçues et rangées dans vos stocks"
+   ]
+  ]
+ },
+ "39": {
+  "i": "Dépréciation des stocks et en-cours dont la valeur à la clôture est tombée sous le coût : invendus, articles démodés, abîmés, périmés. Dotation par le 68173, reprise par le 78173.",
+  "k": [
+   "dépréciation stock",
+   "provision stock",
+   "invendus",
+   "stock dormant",
+   "obsolescence",
+   "valeur de marché"
+  ],
+  "nc": [
+   [
+    "603",
+    "la variation de quantité du stock, pas sa perte de valeur"
+   ],
+   [
+    "29",
+    "dépréciation des immobilisations"
+   ]
+  ],
+  "rel": [
+   "68173",
+   "78173"
+  ]
+ },
+ "391": {
+  "i": "Dépréciation du stock de matières premières (31) dont la valeur a baissé : matières périmées, obsolètes ou dont le cours a chuté. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "matières périmées",
+   "perte de valeur",
+   "stock"
+  ],
+  "rel": [
+   "31",
+   "68173",
+   "78173"
+  ]
+ },
+ "392": {
+  "i": "Dépréciation du stock des autres approvisionnements (32) qui ont perdu de leur valeur : consommables inutilisables, emballages abîmés. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "consommables",
+   "perte de valeur",
+   "stock"
+  ],
+  "rel": [
+   "32",
+   "68173",
+   "78173"
+  ]
+ },
+ "3921": {
+  "i": "Dépréciation du stock de matières consommables (321) qui ont perdu de leur valeur. Dotation par le 68173, reprise par le 78173 quand la perte de valeur disparaît.",
+  "k": [
+   "dépréciation",
+   "consommables",
+   "perte de valeur"
+  ],
+  "rel": [
+   "321",
+   "68173",
+   "78173"
+  ]
+ },
+ "3922": {
+  "i": "Dépréciation du stock de fournitures consommables (322) devenues inutilisables ou invendables. Dotation par le 68173, reprise par le 78173.",
+  "k": [
+   "dépréciation",
+   "fournitures",
+   "perte de valeur"
+  ],
+  "rel": [
+   "322",
+   "68173",
+   "78173"
+  ]
+ },
+ "3926": {
+  "i": "Dépréciation du stock d'emballages (326) abîmés ou devenus inutilisables. Dotation par le 68173, reprise par le 78173.",
+  "k": [
+   "dépréciation",
+   "emballages",
+   "perte de valeur"
+  ],
+  "rel": [
+   "326",
+   "68173",
+   "78173"
+  ]
+ },
+ "393": {
+  "i": "Dépréciation des en-cours de production de biens (33) dont le coût engagé dépasse ce qu'on en tirera, par exemple un chantier déficitaire. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "en-cours",
+   "chantier déficitaire",
+   "perte de valeur"
+  ],
+  "nc": [
+   [
+    "1516",
+    "perte prévue sur le contrat, au-delà des coûts déjà engagés"
+   ]
+  ],
+  "rel": [
+   "33",
+   "68173",
+   "78173"
+  ]
+ },
+ "3931": {
+  "i": "Dépréciation des produits en cours de fabrication (331) dont la valeur attendue est inférieure au coût engagé. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "en-cours",
+   "perte de valeur"
+  ],
+  "rel": [
+   "331",
+   "68173",
+   "78173"
+  ]
+ },
+ "3935": {
+  "i": "Dépréciation des travaux en cours (335) quand le chantier vaudra moins que ce qu'il a déjà coûté. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "chantier",
+   "en-cours",
+   "perte de valeur"
+  ],
+  "nc": [
+   [
+    "1516",
+    "perte prévue sur le contrat, au-delà des coûts déjà engagés"
+   ]
+  ],
+  "rel": [
+   "335",
+   "68173",
+   "78173"
+  ]
+ },
+ "394": {
+  "i": "Dépréciation des en-cours de services (34) : études ou prestations engagées dont le coût dépasse ce que le client paiera. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "en-cours",
+   "mission déficitaire",
+   "perte de valeur"
+  ],
+  "nc": [
+   [
+    "1516",
+    "perte prévue sur le contrat, au-delà des coûts déjà engagés"
+   ]
+  ],
+  "rel": [
+   "34",
+   "68173",
+   "78173"
+  ]
+ },
+ "3941": {
+  "i": "Dépréciation des études en cours (341) dont le coût engagé ne sera pas couvert par le prix convenu. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "étude",
+   "en-cours",
+   "perte de valeur"
+  ],
+  "rel": [
+   "341",
+   "68173",
+   "78173"
+  ]
+ },
+ "3945": {
+  "i": "Dépréciation des prestations en cours (345) dont le coût engagé ne sera pas couvert par la facturation attendue. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "mission",
+   "en-cours",
+   "perte de valeur"
+  ],
+  "rel": [
+   "345",
+   "68173",
+   "78173"
+  ]
+ },
+ "395": {
+  "i": "Dépréciation des stocks de produits fabriqués (35) dont la valeur de vente probable est passée sous le coût de production : invendus, fins de série. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "invendus",
+   "fin de série",
+   "perte de valeur",
+   "stock"
+  ],
+  "rel": [
+   "35",
+   "68173",
+   "78173"
+  ]
+ },
+ "3951": {
+  "i": "Dépréciation des produits intermédiaires (351) ayant perdu de leur valeur. Dotation par le 68173, reprise par le 78173.",
+  "k": [
+   "dépréciation",
+   "semi-fini",
+   "perte de valeur"
+  ],
+  "rel": [
+   "351",
+   "68173",
+   "78173"
+  ]
+ },
+ "3955": {
+  "i": "Dépréciation des produits finis (355) qui ne se vendront pas au prix prévu : invendus, démodés, abîmés. Dotation par le 68173, reprise par le 78173.",
+  "k": [
+   "dépréciation",
+   "invendus",
+   "démodés",
+   "perte de valeur"
+  ],
+  "rel": [
+   "355",
+   "68173",
+   "78173"
+  ]
+ },
+ "397": {
+  "i": "Dépréciation du stock de marchandises (37) : articles invendables au prix prévu, démodés, abîmés, à solder. Dotation 68173, reprise 78173.",
+  "k": [
+   "dépréciation",
+   "invendus",
+   "soldes",
+   "démodés",
+   "perte de valeur"
+  ],
+  "nc": [
+   [
+    "6037",
+    "la variation de quantité du stock"
+   ]
+  ],
+  "rel": [
+   "37",
+   "68173",
+   "78173"
+  ]
+ },
+ "40": {
+  "i": "Tout ce que vous devez à vos fournisseurs et ce qu'ils vous doivent : factures, effets, retenues de garantie, factures non parvenues, acomptes versés, avoirs à recevoir.",
+  "k": [
+   "dettes fournisseurs",
+   "achats",
+   "factures d'achat",
+   "balance fournisseurs"
+  ],
+  "nc": [
+   [
+    "41",
+    "vos clients"
+   ]
+  ],
+  "rel": [
+   "401",
+   "404",
+   "408",
+   "409"
   ]
  },
  "401": {
@@ -5719,6 +6611,52 @@
    "512"
   ]
  },
+ "4011": {
+  "i": "Sous-compte usuel du 401 : les factures des fournisseurs de biens et de prestations de l'exploitation courante, jusqu'à leur paiement. Un compte auxiliaire par fournisseur.",
+  "k": [
+   "fournisseur",
+   "facture d'achat",
+   "compte auxiliaire",
+   "grand livre fournisseurs"
+  ],
+  "nc": [
+   [
+    "4041",
+    "fournisseur d'une immobilisation"
+   ],
+   [
+    "4017",
+    "part de la facture retenue en garantie"
+   ]
+  ],
+  "rel": [
+   "401",
+   "4456"
+  ]
+ },
+ "4017": {
+  "i": "Part d'une facture fournisseur que vous ne payez pas tout de suite, retenue jusqu'à la fin de la période de garantie, surtout dans le bâtiment. Réglée à la levée des réserves.",
+  "k": [
+   "retenue de garantie",
+   "BTP",
+   "levée des réserves",
+   "parfait achèvement",
+   "chantier"
+  ],
+  "nc": [
+   [
+    "4047",
+    "retenue sur l'achat d'une immobilisation"
+   ],
+   [
+    "4117",
+    "retenue qu'un client vous applique"
+   ]
+  ],
+  "rel": [
+   "401"
+  ]
+ },
  "403": {
   "i": "Dettes fournisseurs réglées par effet de commerce : lettre de change, billet à ordre.",
   "k": [
@@ -5744,6 +6682,64 @@
    "44562"
   ]
  },
+ "4041": {
+  "i": "Sous-compte usuel du 404 : les factures des fournisseurs auprès desquels vous avez acheté une immobilisation, jusqu'à leur paiement.",
+  "k": [
+   "fournisseur d'immobilisation",
+   "achat immobilisation",
+   "facture immobilisation"
+  ],
+  "nc": [
+   [
+    "4011",
+    "fournisseur de biens et services courants"
+   ],
+   [
+    "238",
+    "acompte versé avant la livraison de l'immobilisation"
+   ]
+  ],
+  "rel": [
+   "404",
+   "44562"
+  ]
+ },
+ "4047": {
+  "i": "Retenue de garantie sur une immobilisation : part du prix conservée jusqu'à la fin de la garantie, par exemple sur une construction. Se paie à la levée des réserves.",
+  "k": [
+   "retenue de garantie",
+   "construction",
+   "levée des réserves",
+   "immobilisation"
+  ],
+  "nc": [
+   [
+    "4017",
+    "retenue sur un achat courant"
+   ]
+  ],
+  "rel": [
+   "404"
+  ]
+ },
+ "405": {
+  "i": "Dette envers un fournisseur d'immobilisation réglée par lettre de change ou billet à ordre, en attente de l'échéance.",
+  "k": [
+   "effet à payer",
+   "traite",
+   "billet à ordre",
+   "immobilisation"
+  ],
+  "nc": [
+   [
+    "403",
+    "effet à payer sur un achat courant"
+   ]
+  ],
+  "rel": [
+   "404"
+  ]
+ },
  "408": {
   "i": "À la clôture : achats livrés ou prestations reçues dont la facture n'est pas encore arrivée. On contre-passe à l'ouverture.",
   "k": [
@@ -5766,6 +6762,95 @@
    "44586"
   ]
  },
+ "4081": {
+  "i": "Sous-compte usuel du 408 : à la clôture, biens livrés et prestations reçues des fournisseurs courants dont la facture n'est pas arrivée, estimés d'après la commande ou le bon de livraison. Contre-passé à l'ouverture.",
+  "k": [
+   "FNP",
+   "facture non parvenue",
+   "clôture",
+   "cut-off",
+   "charge à payer"
+  ],
+  "nc": [
+   [
+    "4084",
+    "facture non parvenue sur une immobilisation"
+   ],
+   [
+    "486",
+    "facture reçue qui concerne l'exercice suivant"
+   ]
+  ],
+  "rel": [
+   "408",
+   "44586"
+  ]
+ },
+ "4084": {
+  "i": "Immobilisation reçue et mise en service avant la clôture, dont la facture n'est pas encore arrivée : on rattache l'actif et la dette estimée, puis on solde à réception de la facture.",
+  "k": [
+   "FNP immobilisation",
+   "facture non parvenue",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4081",
+    "facture non parvenue sur un achat courant"
+   ],
+   [
+    "231",
+    "immobilisation en cours, non terminée"
+   ]
+  ],
+  "rel": [
+   "404",
+   "408"
+  ]
+ },
+ "4088": {
+  "i": "Intérêts dus à un fournisseur (délai de paiement accordé, retard) qui ont couru jusqu'à la clôture sans être échus ni payés. On les rattache à l'exercice par la charge 66181, puis on contre-passe à l'ouverture.",
+  "k": [
+   "intérêts courus",
+   "ICNE",
+   "cut-off",
+   "clôture",
+   "intérêts de retard",
+   "intérêts fournisseur"
+  ],
+  "nc": [
+   [
+    "6711",
+    "pénalités contractuelles de retard sur un marché"
+   ]
+  ],
+  "rel": [
+   "401",
+   "66181"
+  ]
+ },
+ "409": {
+  "i": "Fournisseurs qui, exceptionnellement, vous doivent quelque chose : acomptes versés, avoirs à recevoir, emballages consignés à rendre, ristournes acquises non encore reçues.",
+  "k": [
+   "fournisseur débiteur",
+   "avoir à recevoir",
+   "acompte versé",
+   "solde débiteur fournisseur"
+  ],
+  "nc": [
+   [
+    "419",
+    "le miroir côté clients"
+   ]
+  ],
+  "rel": [
+   "4091",
+   "4096",
+   "4097",
+   "4098"
+  ]
+ },
  "4091": {
   "i": "Acomptes versés à un fournisseur avant la livraison. Se solde à réception de la facture.",
   "k": [
@@ -5778,6 +6863,98 @@
     "4191",
     "acompte reçu d'un client"
    ]
+  ]
+ },
+ "4096": {
+  "i": "Consignes d'emballages ou de matériel payées à un fournisseur et qu'il vous remboursera au retour : casiers, palettes, bouteilles, cuves. Si vous ne rendez pas, la consigne devient une charge.",
+  "k": [
+   "consigne",
+   "emballage consigné",
+   "palette",
+   "casier",
+   "bouteille consignée",
+   "matériel à rendre"
+  ],
+  "nc": [
+   [
+    "4196",
+    "consignes que vous facturez à vos clients"
+   ],
+   [
+    "326",
+    "emballages qui vous appartiennent, en stock"
+   ]
+  ],
+  "rel": [
+   "6136"
+  ]
+ },
+ "4097": {
+  "i": "Avoirs reçus d'un fournisseur (retour, erreur de facturation, geste commercial) pas encore imputés sur une facture ni remboursés.",
+  "k": [
+   "avoir fournisseur",
+   "avoir reçu",
+   "note de crédit",
+   "retour de marchandises"
+  ],
+  "nc": [
+   [
+    "4098",
+    "avoir attendu mais pas encore reçu à la clôture"
+   ],
+   [
+    "609",
+    "la remise elle-même, en réduction des achats"
+   ]
+  ],
+  "rel": [
+   "401"
+  ]
+ },
+ "4098": {
+  "i": "À la clôture : remises, ristournes et avoirs que le fournisseur vous doit, acquis mais pas encore reçus, par exemple une ristourne de fin d'année. Contre-passé à l'ouverture.",
+  "k": [
+   "ristourne à recevoir",
+   "avoir à recevoir",
+   "RFA",
+   "remise de fin d'année",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4097",
+    "avoir déjà reçu"
+   ],
+   [
+    "4198",
+    "le miroir côté clients"
+   ]
+  ],
+  "rel": [
+   "609",
+   "44586"
+  ]
+ },
+ "41": {
+  "i": "Tout ce que vos clients vous doivent et ce que vous leur devez : factures, effets, retenues, factures à établir, clients douteux, acomptes reçus, avoirs à émettre.",
+  "k": [
+   "créances clients",
+   "ventes",
+   "encaissements",
+   "balance clients"
+  ],
+  "nc": [
+   [
+    "40",
+    "vos fournisseurs"
+   ]
+  ],
+  "rel": [
+   "411",
+   "416",
+   "418",
+   "419"
   ]
  },
  "411": {
@@ -5806,6 +6983,48 @@
    "4111",
    "4457",
    "512"
+  ]
+ },
+ "4111": {
+  "i": "Sous-compte usuel du 411 : les factures de ventes de biens et de prestations émises à vos clients, jusqu'à l'encaissement. Un compte auxiliaire par client.",
+  "k": [
+   "client",
+   "facture de vente",
+   "compte auxiliaire",
+   "grand livre clients"
+  ],
+  "nc": [
+   [
+    "462",
+    "acheteur d'une immobilisation cédée"
+   ],
+   [
+    "4117",
+    "part de la facture retenue en garantie"
+   ]
+  ],
+  "rel": [
+   "411",
+   "4457"
+  ]
+ },
+ "4117": {
+  "i": "Part de vos factures que le client conserve jusqu'à la fin de la période de garantie, typiquement sur un chantier. À encaisser à la levée des réserves.",
+  "k": [
+   "retenue de garantie",
+   "BTP",
+   "chantier",
+   "levée des réserves",
+   "parfait achèvement"
+  ],
+  "nc": [
+   [
+    "4017",
+    "retenue que vous appliquez à un fournisseur"
+   ]
+  ],
+  "rel": [
+   "411"
   ]
  },
  "413": {
@@ -5843,6 +7062,32 @@
    "68174"
   ]
  },
+ "418": {
+  "i": "À la clôture : ventes et prestations de l'exercice réalisées mais pas encore facturées, avec leur TVA en attente. On constate le produit, puis on contre-passe à l'ouverture et on facture normalement.",
+  "k": [
+   "FAE",
+   "facture à établir",
+   "produit à recevoir",
+   "clôture",
+   "cut-off",
+   "non facturé"
+  ],
+  "nc": [
+   [
+    "487",
+    "facturé d'avance, pour l'exercice suivant"
+   ],
+   [
+    "4191",
+    "acompte encaissé avant la facture"
+   ]
+  ],
+  "rel": [
+   "4181",
+   "4188",
+   "44587"
+  ]
+ },
  "4181": {
   "i": "À la clôture : prestations réalisées ou biens livrés dont la facture n'est pas encore émise.",
   "k": [
@@ -5861,6 +7106,48 @@
    "44587"
   ]
  },
+ "4188": {
+  "i": "Intérêts que vous doit un client pour délai ou retard de paiement, courus jusqu'à la clôture mais ni échus ni encaissés. Rattachés à l'exercice par le produit financier 7631, contre-passés à l'ouverture.",
+  "k": [
+   "intérêts courus",
+   "ICNE",
+   "cut-off",
+   "clôture",
+   "intérêts de retard client"
+  ],
+  "nc": [
+   [
+    "7711",
+    "pénalités et dédits perçus, qui ne sont pas des intérêts"
+   ]
+  ],
+  "rel": [
+   "411",
+   "7631"
+  ]
+ },
+ "419": {
+  "i": "Clients dont le solde est créditeur : acomptes reçus avant facturation, emballages consignés, avoirs à leur rembourser ou à établir. À présenter au passif, pas en moins des créances.",
+  "k": [
+   "client créditeur",
+   "avoir client",
+   "acompte reçu",
+   "trop-perçu client",
+   "solde créditeur client"
+  ],
+  "nc": [
+   [
+    "409",
+    "le miroir côté fournisseurs"
+   ]
+  ],
+  "rel": [
+   "4191",
+   "4196",
+   "4197",
+   "4198"
+  ]
+ },
  "4191": {
   "i": "Acomptes reçus des clients avant la facturation.",
   "k": [
@@ -5877,6 +7164,103 @@
     "487",
     "produit facturé d'avance"
    ]
+  ]
+ },
+ "4196": {
+  "i": "Consignes d'emballages ou de matériel facturées à vos clients, à leur rembourser au retour. Si l'emballage ne revient pas, la consigne devient une vente.",
+  "k": [
+   "consigne",
+   "emballage consigné",
+   "casier",
+   "palette",
+   "bouteille consignée",
+   "matériel consigné"
+  ],
+  "nc": [
+   [
+    "4096",
+    "consignes que vous payez à vos fournisseurs"
+   ],
+   [
+    "7086",
+    "boni quand vous reprenez l'emballage moins cher que la consigne"
+   ]
+  ],
+  "rel": [
+   "7086",
+   "326"
+  ]
+ },
+ "4197": {
+  "i": "Avoirs émis à un client (retour, erreur de facturation, geste commercial) pas encore imputés sur une facture ni remboursés.",
+  "k": [
+   "avoir client",
+   "avoir émis",
+   "note de crédit",
+   "retour client"
+  ],
+  "nc": [
+   [
+    "4198",
+    "avoir dû au client mais pas encore émis"
+   ],
+   [
+    "709",
+    "la remise elle-même, en réduction des ventes"
+   ]
+  ],
+  "rel": [
+   "411"
+  ]
+ },
+ "4198": {
+  "i": "À la clôture : remises, ristournes et avoirs acquis à vos clients mais pas encore émis, comme une ristourne annuelle. Contre-passé à l'ouverture, puis l'avoir est émis normalement.",
+  "k": [
+   "ristourne à accorder",
+   "avoir à établir",
+   "RFA",
+   "remise de fin d'année",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4197",
+    "avoir déjà émis"
+   ],
+   [
+    "4098",
+    "le miroir côté fournisseurs"
+   ]
+  ],
+  "rel": [
+   "709",
+   "44587"
+  ]
+ },
+ "42": {
+  "i": "Tout ce qui concerne les salariés en dehors des organismes sociaux : salaires nets à payer, acomptes, saisies sur salaire, participation, congés à payer.",
+  "k": [
+   "paie",
+   "salariés",
+   "bulletin de paie",
+   "salaires",
+   "dettes sociales"
+  ],
+  "nc": [
+   [
+    "43",
+    "cotisations dues aux organismes sociaux"
+   ],
+   [
+    "641",
+    "la charge de salaires"
+   ]
+  ],
+  "rel": [
+   "421",
+   "425",
+   "428"
   ]
  },
  "421": {
@@ -5902,6 +7286,89 @@
    "431"
   ]
  },
+ "422": {
+  "i": "Sommes dues au comité d'entreprise ou au comité social : subvention de fonctionnement, budget des œuvres sociales, versements décidés et pas encore payés.",
+  "k": [
+   "CSE",
+   "comité social",
+   "œuvres sociales",
+   "budget de fonctionnement",
+   "représentants du personnel"
+  ],
+  "rel": [
+   "6472",
+   "647"
+  ]
+ },
+ "424": {
+  "i": "La participation des salariés aux résultats une fois son montant arrêté : réserve spéciale en attente de répartition, puis comptes courants des salariés jusqu'au versement ou au blocage.",
+  "k": [
+   "participation",
+   "réserve spéciale de participation",
+   "RSP",
+   "droits des salariés"
+  ],
+  "nc": [
+   [
+    "4284",
+    "estimation provisoire à la clôture, avant arrêté du montant"
+   ],
+   [
+    "1661",
+    "sommes bloquées dans l'entreprise pour plusieurs années"
+   ]
+  ],
+  "rel": [
+   "691",
+   "4246",
+   "4248",
+   "1661"
+  ]
+ },
+ "4246": {
+  "i": "Montant de la réserve spéciale de participation, arrêté d'après le résultat de l'exercice, en attente de répartition entre les salariés et d'affectation.",
+  "k": [
+   "RSP",
+   "participation",
+   "réserve de participation"
+  ],
+  "nc": [
+   [
+    "4284",
+    "provision estimée à la clôture, pas encore arrêtée"
+   ],
+   [
+    "106",
+    "les réserves de la société, qui appartiennent aux associés"
+   ]
+  ],
+  "rel": [
+   "691",
+   "4248"
+  ]
+ },
+ "4248": {
+  "i": "Droits à participation des salariés laissés en compte courant dans l'entreprise après répartition, en attente de versement ou de placement.",
+  "k": [
+   "compte courant salarié",
+   "participation",
+   "droits des salariés"
+  ],
+  "nc": [
+   [
+    "1661",
+    "sommes bloquées durablement dans l'entreprise"
+   ],
+   [
+    "455",
+    "compte courant d'un associé"
+   ]
+  ],
+  "rel": [
+   "4246",
+   "166"
+  ]
+ },
  "425": {
   "i": "Acomptes et avances versés au personnel avant le paiement de la paie.",
   "k": [
@@ -5915,6 +7382,45 @@
    ]
   ]
  },
+ "426": {
+  "i": "Sommes que des salariés vous ont confiées et que vous devrez leur rendre : dépôt de garantie sur un logement de fonction, retenue à restituer.",
+  "k": [
+   "dépôt salarié",
+   "caution salarié",
+   "garantie personnel",
+   "logement de fonction"
+  ],
+  "nc": [
+   [
+    "165",
+    "dépôts reçus de tiers non salariés"
+   ],
+   [
+    "425",
+    "acompte que vous avez versé au salarié"
+   ]
+  ]
+ },
+ "427": {
+  "i": "Saisies sur salaire : la part du salaire retenue sur ordre d'un juge ou d'un huissier, ou une pension alimentaire, à reverser au créancier plutôt qu'au salarié.",
+  "k": [
+   "saisie sur salaire",
+   "saisie-arrêt",
+   "huissier",
+   "pension alimentaire",
+   "avis à tiers détenteur",
+   "retenue sur salaire"
+  ],
+  "nc": [
+   [
+    "425",
+    "avance consentie au salarié"
+   ]
+  ],
+  "rel": [
+   "421"
+  ]
+ },
  "428": {
   "i": "À la clôture : charges de personnel dues mais non encore payées, comme les congés payés acquis.",
   "k": [
@@ -5925,6 +7431,115 @@
   ],
   "rel": [
    "4382"
+  ]
+ },
+ "4282": {
+  "i": "À la clôture : les congés payés acquis par les salariés et non encore pris, valorisés, avec la charge correspondante en 6412. Les charges sociales vont en 4382. Contre-passé à l'ouverture.",
+  "k": [
+   "congés payés",
+   "provision congés payés",
+   "CP acquis",
+   "congés à payer",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4286",
+    "primes et autres charges de personnel à payer"
+   ]
+  ],
+  "rel": [
+   "6412",
+   "4382",
+   "4482"
+  ]
+ },
+ "4284": {
+  "i": "À la clôture : participation des salariés estimée sur le résultat de l'exercice, avant que son montant soit définitivement arrêté. Virée en 4246 une fois le montant fixé.",
+  "k": [
+   "participation",
+   "provision participation",
+   "RSP",
+   "clôture",
+   "charge à payer"
+  ],
+  "nc": [
+   [
+    "4246",
+    "montant définitif, arrêté"
+   ]
+  ],
+  "rel": [
+   "691",
+   "4246"
+  ]
+ },
+ "4286": {
+  "i": "À la clôture : primes, gratifications, heures supplémentaires et autres éléments de paie dus au titre de l'exercice mais réglés après. Contre-passé à l'ouverture.",
+  "k": [
+   "prime à payer",
+   "treizième mois",
+   "heures supplémentaires",
+   "gratification",
+   "charge à payer personnel",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4282",
+    "les congés payés acquis"
+   ],
+   [
+    "421",
+    "salaires déjà passés en paie et à virer"
+   ]
+  ],
+  "rel": [
+   "641",
+   "4386"
+  ]
+ },
+ "4287": {
+  "i": "À la clôture : ce que des salariés vous doivent au titre de l'exercice sans que ce soit encore réglé, par exemple un trop-perçu de salaire à récupérer.",
+  "k": [
+   "trop-perçu",
+   "produit à recevoir personnel",
+   "remboursement salarié",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "425",
+    "acompte ou avance sur salaire"
+   ]
+  ]
+ },
+ "43": {
+  "i": "Tout ce que vous devez aux organismes sociaux, ou qu'ils vous doivent : cotisations salariales et patronales, retraite, prévoyance, mutuelle, charges sociales à payer.",
+  "k": [
+   "cafat",
+   "ruamm",
+   "cotisations sociales",
+   "caisse de retraite",
+   "charges sociales",
+   "mutuelle"
+  ],
+  "nc": [
+   [
+    "645",
+    "la charge patronale"
+   ],
+   [
+    "42",
+    "les salariés eux-mêmes"
+   ]
+  ],
+  "rel": [
+   "431",
+   "437",
+   "438"
   ]
  },
  "431": {
@@ -5967,6 +7582,321 @@
    ]
   ]
  },
+ "438": {
+  "i": "À la clôture : cotisations sociales dues au titre de l'exercice mais pas encore déclarées ni appelées, comme les charges sur congés payés et primes à payer ; en sens inverse, remboursements attendus. Contre-passé à l'ouverture.",
+  "k": [
+   "charges sociales à payer",
+   "cotisations à payer",
+   "cafat à payer",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "431",
+    "cotisations déjà déclarées, échéance connue"
+   ]
+  ],
+  "rel": [
+   "4382",
+   "4386",
+   "4387"
+  ]
+ },
+ "4382": {
+  "i": "Charges patronales calculées sur la provision de congés payés (4282), constatées à la clôture avec la charge en 645. Contre-passé à l'ouverture.",
+  "k": [
+   "charges sociales congés payés",
+   "cotisations sur congés",
+   "provision congés",
+   "cafat",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4482",
+    "taxes fiscales assises sur les mêmes congés"
+   ]
+  ],
+  "rel": [
+   "4282",
+   "645"
+  ]
+ },
+ "4386": {
+  "i": "À la clôture : cotisations sociales dues sur les primes et éléments de paie à payer, régularisations annuelles attendues, cotisations non encore appelées. Contre-passé à l'ouverture.",
+  "k": [
+   "cotisations à payer",
+   "régularisation cafat",
+   "charges sociales sur primes",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4382",
+    "charges sur les congés payés"
+   ],
+   [
+    "431",
+    "cotisations déjà déclarées"
+   ]
+  ],
+  "rel": [
+   "4286",
+   "645"
+  ]
+ },
+ "4387": {
+  "i": "À la clôture : sommes que les organismes sociaux vous doivent, acquises mais pas encore reçues : indemnités journalières, trop-versé de cotisations, aides à l'embauche.",
+  "k": [
+   "indemnités journalières",
+   "IJ",
+   "remboursement cafat",
+   "trop-versé cotisations",
+   "produit à recevoir",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "4487",
+    "remboursement attendu de l'État"
+   ]
+  ],
+  "rel": [
+   "791",
+   "645"
+  ]
+ },
+ "44": {
+  "i": "Tout ce qui concerne l'État et les collectivités : subventions à recevoir, impôt sur les bénéfices, TVA, autres taxes, charges fiscales à payer.",
+  "k": [
+   "état",
+   "impôts",
+   "dsf",
+   "douane",
+   "province",
+   "gouvernement",
+   "fisc",
+   "collectivités"
+  ],
+  "rel": [
+   "441",
+   "444",
+   "445",
+   "447"
+  ]
+ },
+ "441": {
+  "i": "Subvention accordée par une collectivité mais pas encore encaissée : la créance est constatée dès que la décision d'attribution vous est notifiée.",
+  "k": [
+   "subvention à recevoir",
+   "aide accordée",
+   "province",
+   "gouvernement",
+   "notification",
+   "convention de subvention"
+  ],
+  "nc": [
+   [
+    "4419",
+    "avance reçue avant la décision définitive"
+   ]
+  ],
+  "rel": [
+   "74",
+   "13"
+  ]
+ },
+ "4411": {
+  "i": "Subvention d'investissement accordée et non encore encaissée : la créance est constatée quand l'attribution est acquise, avec pour contrepartie le 13.",
+  "k": [
+   "subvention d'équipement",
+   "aide à l'investissement",
+   "subvention à recevoir"
+  ],
+  "nc": [
+   [
+    "4417",
+    "subvention qui compense des charges"
+   ]
+  ],
+  "rel": [
+   "13",
+   "441"
+  ]
+ },
+ "4417": {
+  "i": "Subvention d'exploitation accordée et non encore reçue : la créance est constatée dès que l'attribution est acquise, en contrepartie du 74.",
+  "k": [
+   "aide à l'embauche",
+   "aide à recevoir",
+   "subvention à recevoir",
+   "compensation de charges"
+  ],
+  "nc": [
+   [
+    "4411",
+    "subvention pour financer un investissement"
+   ]
+  ],
+  "rel": [
+   "74",
+   "441"
+  ]
+ },
+ "4418": {
+  "i": "Subvention d'équilibre accordée pour compenser une perte, en attente d'encaissement. Contrepartie : le produit exceptionnel 7715.",
+  "k": [
+   "compensation de perte",
+   "subvention exceptionnelle",
+   "subvention à recevoir"
+  ],
+  "nc": [
+   [
+    "4417",
+    "subvention d'exploitation courante"
+   ]
+  ],
+  "rel": [
+   "7715",
+   "441"
+  ]
+ },
+ "4419": {
+  "i": "Sommes reçues d'une collectivité à titre d'avance sur une subvention pas encore définitivement attribuée. Se solde quand la subvention est acquise.",
+  "k": [
+   "avance sur subvention",
+   "acompte subvention",
+   "subvention provisoire"
+  ],
+  "nc": [
+   [
+    "441",
+    "subvention acquise, à encaisser"
+   ]
+  ],
+  "rel": [
+   "441"
+  ]
+ },
+ "442": {
+  "i": "Impôts que vous retenez à la source pour le compte de l'État sur les sommes versées à des tiers, et que vous lui reversez : retenue sur dividendes ou sur intérêts.",
+  "k": [
+   "retenue à la source",
+   "irvm",
+   "ircdc",
+   "prélèvement",
+   "impôt retenu",
+   "revenus de capitaux mobiliers"
+  ],
+  "nc": [
+   [
+    "444",
+    "votre propre impôt sur les bénéfices"
+   ],
+   [
+    "447",
+    "vos autres impôts et taxes"
+   ]
+  ],
+  "rel": [
+   "4424",
+   "4425"
+  ]
+ },
+ "4424": {
+  "i": "Impôt retenu à la source sur les intérêts versés aux porteurs d'obligations émises par la société, à reverser à l'État.",
+  "k": [
+   "retenue à la source",
+   "intérêts d'obligations",
+   "emprunt obligataire",
+   "prélèvement"
+  ],
+  "nc": [
+   [
+    "4425",
+    "retenue sur les dividendes des associés"
+   ]
+  ],
+  "rel": [
+   "442",
+   "163"
+  ]
+ },
+ "4425": {
+  "i": "Impôt retenu à la source sur les dividendes ou les intérêts de compte courant versés aux associés, à reverser à l'État à la place des bénéficiaires.",
+  "k": [
+   "retenue à la source",
+   "irvm",
+   "ircdc",
+   "dividendes",
+   "impôt sur les dividendes",
+   "prélèvement"
+  ],
+  "nc": [
+   [
+    "457",
+    "les dividendes eux-mêmes, nets à payer"
+   ]
+  ],
+  "rel": [
+   "442",
+   "457",
+   "455"
+  ]
+ },
+ "443": {
+  "i": "Opérations particulières avec l'État ou des collectivités qui n'entrent pas dans les impôts courants : créances ou dettes spécifiques nées d'une mesure ponctuelle.",
+  "k": [
+   "opération particulière",
+   "état",
+   "collectivité",
+   "organisme international"
+  ],
+  "nc": [
+   [
+    "467",
+    "tiers divers hors État"
+   ]
+  ],
+  "rel": [
+   "4431",
+   "4438"
+  ]
+ },
+ "4431": {
+  "i": "Créance née en métropole lors de la suppression de l'ancien décalage d'un mois de la TVA déductible, remboursée sur plusieurs années. Sans usage courant aujourd'hui.",
+  "k": [
+   "décalage d'un mois",
+   "créance sur l'état",
+   "tva",
+   "ancienne créance"
+  ],
+  "nc": [
+   [
+    "44567",
+    "crédit de TVA courant"
+   ]
+  ],
+  "rel": [
+   "4438"
+  ]
+ },
+ "4438": {
+  "i": "Intérêts courus à la clôture sur la créance du 4431, ni échus ni encaissés : rattachés à l'exercice par le produit financier 7638, puis contre-passés à l'ouverture. Sans usage courant aujourd'hui.",
+  "k": [
+   "intérêts courus",
+   "ICNE",
+   "cut-off",
+   "clôture"
+  ],
+  "rel": [
+   "4431",
+   "7638"
+  ]
+ },
  "444": {
   "i": "L'impôt sur les sociétés dû ou trop versé : acomptes, solde, crédits d'impôt.",
   "k": [
@@ -5977,6 +7907,52 @@
   ],
   "rel": [
    "695"
+  ]
+ },
+ "445": {
+  "i": "La TVA (ici la TGC) dans toutes ses composantes : collectée sur vos ventes, déductible sur vos achats, à décaisser ou en crédit, en attente de régularisation.",
+  "k": [
+   "tva",
+   "tgc",
+   "déclaration tva",
+   "déclaration tgc",
+   "taxe sur la valeur ajoutée"
+  ],
+  "nc": [
+   [
+    "6352",
+    "TVA non récupérable, qui devient une charge"
+   ],
+   [
+    "447",
+    "les autres taxes"
+   ]
+  ],
+  "rel": [
+   "4456",
+   "4457",
+   "4455",
+   "44567"
+  ]
+ },
+ "4452": {
+  "i": "Métropole : TVA due sur les achats faits dans un autre pays de l'Union européenne, autoliquidée. Elle est constatée ici et déduite en même temps en 4456, l'opération est neutre.",
+  "k": [
+   "autoliquidation",
+   "acquisition intracommunautaire",
+   "tva intracom",
+   "achat ue",
+   "union européenne"
+  ],
+  "nc": [
+   [
+    "44571",
+    "TVA collectée sur vos propres ventes"
+   ]
+  ],
+  "rel": [
+   "4456",
+   "44566"
   ]
  },
  "4455": {
@@ -5996,6 +7972,49 @@
   "rel": [
    "4457",
    "4456"
+  ]
+ },
+ "44551": {
+  "i": "Le montant net de TVA à payer qui ressort de la déclaration : collectée moins déductible, plus ou moins les régularisations. Soldé au paiement.",
+  "k": [
+   "tva à payer",
+   "tgc à payer",
+   "solde de tva",
+   "déclaration",
+   "paiement tva"
+  ],
+  "nc": [
+   [
+    "44567",
+    "la déclaration fait ressortir un crédit"
+   ],
+   [
+    "44581",
+    "acomptes versés en cours d'année"
+   ]
+  ],
+  "rel": [
+   "44571",
+   "44566",
+   "512"
+  ]
+ },
+ "44558": {
+  "i": "Taxes déclarées et payées avec la TVA, sur la même déclaration, sans être la TVA elle-même : taxes parafiscales ou spéciales.",
+  "k": [
+   "taxe assimilée",
+   "taxe parafiscale",
+   "taxe spéciale",
+   "déclaration tva"
+  ],
+  "nc": [
+   [
+    "44551",
+    "la TVA proprement dite"
+   ]
+  ],
+  "rel": [
+   "4455"
   ]
  },
  "4456": {
@@ -6033,6 +8052,24 @@
    ]
   ]
  },
+ "44563": {
+  "i": "TVA déductible qui vous est transférée par une autre entreprise, avec une attestation de transfert, par exemple par le bailleur d'un bien en crédit-bail.",
+  "k": [
+   "transfert de tva",
+   "attestation de transfert",
+   "tva transférée",
+   "crédit-bail"
+  ],
+  "nc": [
+   [
+    "44566",
+    "TVA facturée directement par vos fournisseurs"
+   ]
+  ],
+  "rel": [
+   "4456"
+  ]
+ },
  "44566": {
   "i": "TVA déductible sur les achats de biens et services courants.",
   "k": [
@@ -6059,6 +8096,23 @@
    ]
   ]
  },
+ "44568": {
+  "i": "Taxes déductibles déclarées avec la TVA sans être la TVA elle-même : le pendant déductible du 44558.",
+  "k": [
+   "taxe assimilée",
+   "taxe parafiscale",
+   "déductible"
+  ],
+  "nc": [
+   [
+    "44558",
+    "la même taxe, côté à payer"
+   ]
+  ],
+  "rel": [
+   "4456"
+  ]
+ },
  "4457": {
   "i": "La TVA que vous facturez à vos clients et que vous devez reverser.",
   "k": [
@@ -6076,6 +8130,46 @@
    "44571"
   ]
  },
+ "44571": {
+  "i": "Sous-compte usuel du 4457 : la TVA facturée à vos clients sur vos ventes et prestations, à reverser avec la déclaration.",
+  "k": [
+   "tva collectée",
+   "tgc collectée",
+   "tva sur ventes",
+   "tva facturée"
+  ],
+  "nc": [
+   [
+    "44566",
+    "TVA que vous récupérez sur vos achats"
+   ],
+   [
+    "44587",
+    "TVA sur les factures à établir"
+   ]
+  ],
+  "rel": [
+   "4457",
+   "44551"
+  ]
+ },
+ "44578": {
+  "i": "Taxes collectées sur vos ventes et reversées avec la TVA, sans être la TVA elle-même : le pendant collecté du 44558.",
+  "k": [
+   "taxe assimilée",
+   "taxe parafiscale",
+   "collectée"
+  ],
+  "nc": [
+   [
+    "44571",
+    "la TVA collectée proprement dite"
+   ]
+  ],
+  "rel": [
+   "4457"
+  ]
+ },
  "4458": {
   "i": "TVA en attente de régularisation : sur factures non parvenues ou à établir, acomptes.",
   "k": [
@@ -6085,6 +8179,129 @@
   "rel": [
    "44586",
    "44587"
+  ]
+ },
+ "44581": {
+  "i": "Acomptes de TVA versés en cours d'année sous le régime simplifié, à déduire sur la déclaration annuelle de régularisation.",
+  "k": [
+   "acompte tva",
+   "régime simplifié",
+   "RSI",
+   "CA12",
+   "acompte semestriel"
+  ],
+  "nc": [
+   [
+    "44551",
+    "le solde réel de TVA à payer"
+   ]
+  ],
+  "rel": [
+   "4455",
+   "44551"
+  ]
+ },
+ "44582": {
+  "i": "Acomptes de TVA versés sous l'ancien régime du forfait, aujourd'hui disparu. Sans usage courant.",
+  "k": [
+   "acompte tva",
+   "forfait",
+   "ancien régime"
+  ],
+  "rel": [
+   "4455"
+  ]
+ },
+ "44583": {
+  "i": "Crédit de TVA dont vous avez demandé le remboursement à l'administration : il quitte le 44567 et attend ici le virement.",
+  "k": [
+   "remboursement de tva",
+   "demande de remboursement",
+   "crédit de tva",
+   "tgc"
+  ],
+  "nc": [
+   [
+    "44567",
+    "crédit conservé et reporté sur la prochaine déclaration"
+   ]
+  ],
+  "rel": [
+   "44567",
+   "512"
+  ]
+ },
+ "44584": {
+  "i": "TVA déduite par anticipation, avant que le droit à déduction soit définitivement acquis. À régulariser quand la situation est confirmée.",
+  "k": [
+   "tva à régulariser",
+   "déduction anticipée",
+   "tva déduite d'avance"
+  ],
+  "rel": [
+   "4456",
+   "4458"
+  ]
+ },
+ "44586": {
+  "i": "À la clôture : la TVA sur les factures fournisseurs non parvenues, en attente de la vraie facture pour devenir déductible. Contre-passée à l'ouverture avec la FNP.",
+  "k": [
+   "tva sur fnp",
+   "FNP",
+   "tva à régulariser",
+   "tgc",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "44566",
+    "TVA déductible sur facture reçue"
+   ]
+  ],
+  "rel": [
+   "408",
+   "4456"
+  ]
+ },
+ "44587": {
+  "i": "À la clôture : la TVA sur vos factures à établir, en attente de la facturation pour devenir exigible. Contre-passée à l'ouverture avec la FAE.",
+  "k": [
+   "tva sur fae",
+   "FAE",
+   "tva à régulariser",
+   "tgc",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "44571",
+    "TVA collectée sur facture émise"
+   ]
+  ],
+  "rel": [
+   "418",
+   "4457"
+  ]
+ },
+ "446": {
+  "i": "Dettes d'impôts ou de droits de douane dont le paiement est différé grâce à une caution bancaire : vous signez un engagement à échéance, la banque garantit.",
+  "k": [
+   "douane",
+   "droits de douane",
+   "crédit d'enlèvement",
+   "caution bancaire",
+   "paiement différé"
+  ],
+  "nc": [
+   [
+    "447",
+    "taxes payées à l'échéance normale"
+   ]
+  ],
+  "rel": [
+   "6617"
   ]
  },
  "447": {
@@ -6110,6 +8327,151 @@
    "631"
   ]
  },
+ "448": {
+  "i": "À la clôture : impôts et taxes dus au titre de l'exercice mais pas encore déclarés ou liquidés, et en sens inverse les dégrèvements ou remboursements attendus. Contre-passé à l'ouverture.",
+  "k": [
+   "charges fiscales à payer",
+   "impôts à payer",
+   "dégrèvement à recevoir",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "447",
+    "taxes déjà liquidées, à payer à l'échéance"
+   ],
+   [
+    "444",
+    "l'impôt sur les bénéfices, qui a son propre compte"
+   ]
+  ],
+  "rel": [
+   "4482",
+   "4486",
+   "4487"
+  ]
+ },
+ "4482": {
+  "i": "Taxes assises sur les salaires calculées sur la provision de congés payés (4282), à la clôture : formation professionnelle, taxes sur les salaires. Contre-passé à l'ouverture.",
+  "k": [
+   "taxes sur congés payés",
+   "charges fiscales congés",
+   "formation professionnelle",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4382",
+    "cotisations sociales sur les mêmes congés"
+   ]
+  ],
+  "rel": [
+   "4282",
+   "631",
+   "633"
+  ]
+ },
+ "4486": {
+  "i": "À la clôture : impôts et taxes de l'exercice non encore liquidés, par exemple une taxe annuelle dont l'avis arrivera plus tard, estimés d'après les bases connues.",
+  "k": [
+   "impôt à payer",
+   "taxe à payer",
+   "charge à payer état",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4482",
+    "taxes sur les congés payés"
+   ],
+   [
+    "447",
+    "taxe déjà connue et liquidée"
+   ]
+  ],
+  "rel": [
+   "635",
+   "631"
+  ]
+ },
+ "4487": {
+  "i": "À la clôture : dégrèvements, remboursements ou crédits d'impôt acquis mais pas encore reçus de l'État.",
+  "k": [
+   "dégrèvement",
+   "crédit d'impôt à recevoir",
+   "remboursement d'impôt",
+   "produit à recevoir",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "4387",
+    "remboursement attendu d'un organisme social"
+   ]
+  ],
+  "rel": [
+   "7717",
+   "444"
+  ]
+ },
+ "449": {
+  "i": "Quotas d'émission de gaz à effet de serre que l'entreprise doit restituer à l'État au titre de ses émissions. Réservé aux industries soumises au système des quotas.",
+  "k": [
+   "quotas carbone",
+   "co2",
+   "gaz à effet de serre",
+   "droits d'émission"
+  ]
+ },
+ "45": {
+  "i": "Vos relations financières avec les sociétés du groupe et avec les associés : comptes courants, apports en capital, dividendes, opérations faites en commun.",
+  "k": [
+   "compte courant",
+   "dividendes",
+   "apports",
+   "filiale",
+   "intra-groupe"
+  ],
+  "rel": [
+   "451",
+   "455",
+   "456",
+   "457"
+  ]
+ },
+ "451": {
+  "i": "Comptes courants entre sociétés d'un même groupe : avances de trésorerie, refacturations, opérations réglées pour le compte d'une autre société. Un sous-compte par société.",
+  "k": [
+   "compte courant groupe",
+   "filiale",
+   "société sœur",
+   "holding",
+   "avance de trésorerie",
+   "intra-groupe"
+  ],
+  "nc": [
+   [
+    "455",
+    "compte courant d'un associé personne physique"
+   ],
+   [
+    "261",
+    "les titres de la filiale eux-mêmes"
+   ],
+   [
+    "267",
+    "prêt durable à une participation"
+   ]
+  ],
+  "rel": [
+   "4951",
+   "6615",
+   "768"
+  ]
+ },
  "455": {
   "i": "Compte courant d'associé : sommes prêtées par un associé, ou laissées à disposition de la société.",
   "k": [
@@ -6133,6 +8495,229 @@
    ]
   ]
  },
+ "4551": {
+  "i": "Le compte courant d'associé proprement dit : les sommes prêtées ou laissées à disposition de la société, hors intérêts. Un sous-compte par associé.",
+  "k": [
+   "CCA",
+   "compte courant associé",
+   "avance associé",
+   "apport en compte courant"
+  ],
+  "nc": [
+   [
+    "4558",
+    "les intérêts courus sur le compte courant"
+   ]
+  ],
+  "rel": [
+   "455"
+  ]
+ },
+ "4558": {
+  "i": "Intérêts du compte courant d'associé qui ont couru jusqu'à la clôture sans être échus ni payés. Rattachés à l'exercice par la charge 6615, contre-passés à l'ouverture de l'exercice suivant.",
+  "k": [
+   "intérêts courus",
+   "ICNE",
+   "cut-off",
+   "clôture",
+   "intérêts de compte courant",
+   "rémunération du CCA"
+  ],
+  "nc": [
+   [
+    "4425",
+    "impôt retenu à la source sur ces intérêts"
+   ]
+  ],
+  "rel": [
+   "455",
+   "6615"
+  ]
+ },
+ "456": {
+  "i": "Les opérations en capital avec les associés : promesses d'apport, capital appelé non versé, versements reçus ou anticipés, capital à rembourser.",
+  "k": [
+   "apport",
+   "augmentation de capital",
+   "libération du capital",
+   "capital appelé",
+   "réduction de capital"
+  ],
+  "nc": [
+   [
+    "455",
+    "avance en compte courant, pas du capital"
+   ]
+  ],
+  "rel": [
+   "101",
+   "4561",
+   "4562",
+   "4563"
+  ]
+ },
+ "4561": {
+  "i": "À la constitution ou lors d'une augmentation de capital : la promesse d'apport de chaque associé, soldée quand l'apport est libéré, en argent ou en nature.",
+  "k": [
+   "apport",
+   "constitution",
+   "promesse d'apport",
+   "libération",
+   "souscription"
+  ],
+  "nc": [
+   [
+    "4562",
+    "capital appelé mais toujours pas versé"
+   ]
+  ],
+  "rel": [
+   "101",
+   "45611",
+   "45615"
+  ]
+ },
+ "45611": {
+  "i": "Apport d'un bien plutôt que d'argent : fonds de commerce, matériel, immeuble, créance. L'apport est libéré quand le bien est transféré à la société.",
+  "k": [
+   "apport de fonds de commerce",
+   "apport d'immeuble",
+   "apport de matériel",
+   "commissaire aux apports"
+  ],
+  "nc": [
+   [
+    "45615",
+    "apport en argent"
+   ]
+  ],
+  "rel": [
+   "4561",
+   "101"
+  ]
+ },
+ "45615": {
+  "i": "Apport en argent des associés, libéré par versement sur le compte de la société, le plus souvent au moment de la constitution.",
+  "k": [
+   "apport en argent",
+   "versement du capital",
+   "dépôt du capital",
+   "libération"
+  ],
+  "nc": [
+   [
+    "45611",
+    "apport d'un bien"
+   ]
+  ],
+  "rel": [
+   "4561",
+   "512"
+  ]
+ },
+ "4562": {
+  "i": "Capital souscrit et appelé que les actionnaires ou associés n'ont pas encore versé : la société détient une créance sur eux jusqu'au règlement.",
+  "k": [
+   "capital appelé non versé",
+   "appel de fonds",
+   "libération du capital",
+   "créance sur associés"
+  ],
+  "nc": [
+   [
+    "109",
+    "capital souscrit mais pas encore appelé"
+   ],
+   [
+    "4564",
+    "versement fait avant l'appel"
+   ]
+  ],
+  "rel": [
+   "1012",
+   "4566"
+  ]
+ },
+ "4563": {
+  "i": "Fonds reçus des associés pendant une augmentation de capital, tant que l'opération n'est pas définitivement constatée. Virés ensuite au capital et à la prime d'émission.",
+  "k": [
+   "augmentation de capital",
+   "souscription",
+   "versement reçu",
+   "prime d'émission",
+   "fonds en attente"
+  ],
+  "nc": [
+   [
+    "4564",
+    "versement anticipé, avant tout appel"
+   ],
+   [
+    "455",
+    "avance en compte courant"
+   ]
+  ],
+  "rel": [
+   "101",
+   "1041",
+   "512"
+  ]
+ },
+ "4564": {
+  "i": "Versements faits par des associés, par avance, sur du capital souscrit mais pas encore appelé. Reclassés quand l'appel intervient.",
+  "k": [
+   "versement anticipé",
+   "capital non appelé",
+   "avance sur capital"
+  ],
+  "nc": [
+   [
+    "455",
+    "somme prêtée en compte courant"
+   ],
+   [
+    "4563",
+    "versement dans une augmentation de capital en cours"
+   ]
+  ],
+  "rel": [
+   "4562",
+   "109"
+  ]
+ },
+ "4566": {
+  "i": "Actionnaire qui n'a pas versé le capital appelé malgré la mise en demeure : sa créance est isolée ici, en attente de la vente de ses titres ou du paiement.",
+  "k": [
+   "actionnaire défaillant",
+   "capital non libéré",
+   "mise en demeure",
+   "défaut de versement"
+  ],
+  "rel": [
+   "4562"
+  ]
+ },
+ "4567": {
+  "i": "Montant à rembourser aux associés après une décision de réduction du capital, jusqu'au paiement effectif.",
+  "k": [
+   "réduction de capital",
+   "remboursement du capital",
+   "amortissement du capital"
+  ],
+  "nc": [
+   [
+    "457",
+    "dividendes à payer"
+   ],
+   [
+    "455",
+    "remboursement d'un compte courant"
+   ]
+  ],
+  "rel": [
+   "101"
+  ]
+ },
  "457": {
   "i": "Dividendes décidés par l'assemblée et pas encore versés aux associés.",
   "k": [
@@ -6145,6 +8730,151 @@
     "455",
     "somme laissée en compte courant"
    ]
+  ]
+ },
+ "458": {
+  "i": "Opérations avec vos partenaires dans une société en participation ou un GIE : avances, quote-parts de résultat à recevoir ou à verser, frais partagés.",
+  "k": [
+   "GIE",
+   "société en participation",
+   "SEP",
+   "quote-part de résultat",
+   "co-associé",
+   "opérations en commun"
+  ],
+  "nc": [
+   [
+    "451",
+    "sociétés du groupe"
+   ],
+   [
+    "188",
+    "compte de liaison avec la société en participation"
+   ]
+  ],
+  "rel": [
+   "4581",
+   "4588",
+   "655",
+   "755"
+  ]
+ },
+ "4581": {
+  "i": "Le principal des opérations faites en commun : avances, quote-parts de résultat, refacturations entre membres, hors intérêts.",
+  "k": [
+   "GIE",
+   "société en participation",
+   "quote-part",
+   "avances entre membres"
+  ],
+  "nc": [
+   [
+    "4588",
+    "les intérêts courus sur ces opérations"
+   ]
+  ],
+  "rel": [
+   "458"
+  ]
+ },
+ "4588": {
+  "i": "Intérêts courus à la clôture sur les opérations faites en commun (société en participation, GIE), ni échus ni réglés. Rattachés à l'exercice : charge 66188 si vous les devez, produit 7638 si on vous les doit. Contre-passés à l'ouverture.",
+  "k": [
+   "intérêts courus",
+   "ICNE",
+   "cut-off",
+   "clôture",
+   "GIE",
+   "société en participation"
+  ],
+  "rel": [
+   "458",
+   "66188",
+   "7638"
+  ]
+ },
+ "46": {
+  "i": "Les tiers qui ne sont ni fournisseurs, ni clients, ni personnel, ni État, ni associés : cessions d'immobilisations ou de titres, débiteurs et créditeurs divers, charges à payer et produits à recevoir divers.",
+  "k": [
+   "débiteurs divers",
+   "créditeurs divers",
+   "tiers divers",
+   "autres tiers"
+  ],
+  "rel": [
+   "462",
+   "467",
+   "468"
+  ]
+ },
+ "462": {
+  "i": "Le prix de vente d'une immobilisation cédée, à encaisser de l'acheteur. Contrepartie : le 775, et non un compte client.",
+  "k": [
+   "cession d'immobilisation",
+   "vente de véhicule",
+   "acheteur",
+   "prix de cession à encaisser"
+  ],
+  "nc": [
+   [
+    "411",
+    "client de votre activité courante"
+   ],
+   [
+    "465",
+    "vente de titres de placement"
+   ]
+  ],
+  "rel": [
+   "775",
+   "4962"
+  ]
+ },
+ "464": {
+  "i": "Prix d'achat de titres de placement pas encore réglé au vendeur ou à l'intermédiaire, jusqu'au paiement.",
+  "k": [
+   "achat de titres",
+   "VMP",
+   "placement",
+   "souscription",
+   "dette sur titres"
+  ],
+  "nc": [
+   [
+    "404",
+    "achat d'une immobilisation"
+   ],
+   [
+    "269",
+    "versements restant dus sur des titres de participation"
+   ]
+  ],
+  "rel": [
+   "503",
+   "50"
+  ]
+ },
+ "465": {
+  "i": "Prix de vente de titres de placement cédés, à encaisser de l'acheteur ou de l'intermédiaire.",
+  "k": [
+   "vente de titres",
+   "VMP",
+   "cession de placement",
+   "produit de cession à encaisser"
+  ],
+  "nc": [
+   [
+    "462",
+    "vente d'une immobilisation"
+   ],
+   [
+    "411",
+    "client de votre activité"
+   ]
+  ],
+  "rel": [
+   "767",
+   "4965"
   ]
  },
  "467": {
@@ -6161,6 +8891,101 @@
    ]
   ]
  },
+ "468": {
+  "i": "À la clôture : charges dues et produits acquis vis-à-vis de tiers divers, en dehors des fournisseurs, clients, personnel, organismes sociaux et État. Contre-passé à l'ouverture.",
+  "k": [
+   "charges à payer divers",
+   "produits à recevoir divers",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "408",
+    "facture fournisseur non parvenue"
+   ],
+   [
+    "418",
+    "facture client à établir"
+   ]
+  ],
+  "rel": [
+   "4686",
+   "4687"
+  ]
+ },
+ "4686": {
+  "i": "À la clôture : charges de l'exercice dues à des tiers divers et non encore réglées : jetons de présence, redevances, indemnités, intérêts hors banque et emprunts.",
+  "k": [
+   "charge à payer",
+   "jetons de présence",
+   "redevance à payer",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4081",
+    "facture fournisseur non parvenue"
+   ],
+   [
+    "4286",
+    "charges de personnel à payer"
+   ],
+   [
+    "4486",
+    "impôts et taxes à payer"
+   ]
+  ],
+  "rel": [
+   "468"
+  ]
+ },
+ "4687": {
+  "i": "À la clôture : produits de l'exercice acquis auprès de tiers divers et non encore reçus : indemnité d'assurance accordée, remboursement attendu, redevance à percevoir.",
+  "k": [
+   "produit à recevoir",
+   "indemnité d'assurance à recevoir",
+   "remboursement à recevoir",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "4181",
+    "vente ou prestation à facturer"
+   ],
+   [
+    "4387",
+    "produit attendu d'un organisme social"
+   ],
+   [
+    "4487",
+    "remboursement attendu de l'État"
+   ]
+  ],
+  "rel": [
+   "468",
+   "791"
+  ]
+ },
+ "47": {
+  "i": "Comptes de passage : opérations non identifiées ou en attente d'imputation (471 à 475 sont des comptes d'attente), écarts de conversion sur devises (476, 477), autres opérations transitoires (478). Tout doit être soldé ou justifié à la clôture.",
+  "k": [
+   "attente",
+   "transitoire",
+   "à régulariser",
+   "non identifié",
+   "écart de conversion",
+   "devises"
+  ],
+  "rel": [
+   "471",
+   "476",
+   "477",
+   "478"
+  ]
+ },
  "471": {
   "i": "Compte provisoire pour une opération qu'on ne sait pas encore imputer. Doit être vidé avant la clôture.",
   "k": [
@@ -6175,6 +9000,266 @@
     "467",
     "tiers identifié mais divers"
    ]
+  ]
+ },
+ "476": {
+  "i": "À la clôture : perte latente de change sur vos créances et dettes en devises, converties au cours de clôture. Elle ne passe pas en charge : on constitue une provision (1515), et l'écart est contre-passé à l'ouverture.",
+  "k": [
+   "écart de conversion",
+   "perte de change latente",
+   "devises",
+   "cours de clôture",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "666",
+    "perte de change réalisée, définitive"
+   ],
+   [
+    "656",
+    "perte de change réalisée sur une opération commerciale"
+   ]
+  ],
+  "rel": [
+   "1515",
+   "6865",
+   "477"
+  ]
+ },
+ "4761": {
+  "i": "Créance en devises dont la valeur convertie au cours de clôture a baissé : perte latente, à provisionner.",
+  "k": [
+   "créance en devises",
+   "perte latente",
+   "cours de clôture",
+   "écart de conversion"
+  ],
+  "nc": [
+   [
+    "4771",
+    "la créance a au contraire pris de la valeur"
+   ]
+  ],
+  "rel": [
+   "476",
+   "1515"
+  ]
+ },
+ "4762": {
+  "i": "Dette en devises dont la valeur convertie au cours de clôture a augmenté : perte latente, à provisionner.",
+  "k": [
+   "dette en devises",
+   "perte latente",
+   "cours de clôture",
+   "écart de conversion"
+  ],
+  "nc": [
+   [
+    "4772",
+    "la dette a au contraire diminué"
+   ]
+  ],
+  "rel": [
+   "476",
+   "1515"
+  ]
+ },
+ "4768": {
+  "i": "Perte latente de change neutralisée par une couverture, par exemple un achat de devises à terme : l'écart est isolé ici et ne donne pas lieu à provision.",
+  "k": [
+   "couverture de change",
+   "achat à terme",
+   "devises",
+   "écart couvert"
+  ],
+  "nc": [
+   [
+    "4761",
+    "écart non couvert, à provisionner"
+   ]
+  ],
+  "rel": [
+   "476"
+  ]
+ },
+ "477": {
+  "i": "À la clôture : gain latent de change sur vos créances et dettes en devises, converties au cours de clôture. Par prudence, il n'est pas pris en produit ; l'écart est contre-passé à l'ouverture.",
+  "k": [
+   "écart de conversion",
+   "gain de change latent",
+   "devises",
+   "cours de clôture",
+   "clôture",
+   "cut-off"
+  ],
+  "nc": [
+   [
+    "766",
+    "gain de change réalisé, définitif"
+   ],
+   [
+    "756",
+    "gain de change réalisé sur une opération commerciale"
+   ]
+  ],
+  "rel": [
+   "476"
+  ]
+ },
+ "4771": {
+  "i": "Créance en devises dont la valeur convertie au cours de clôture a augmenté : gain latent, non pris en résultat.",
+  "k": [
+   "créance en devises",
+   "gain latent",
+   "cours de clôture"
+  ],
+  "nc": [
+   [
+    "4761",
+    "la créance a au contraire perdu de la valeur"
+   ]
+  ],
+  "rel": [
+   "477"
+  ]
+ },
+ "4772": {
+  "i": "Dette en devises dont la valeur convertie au cours de clôture a diminué : gain latent, non pris en résultat.",
+  "k": [
+   "dette en devises",
+   "gain latent",
+   "cours de clôture"
+  ],
+  "nc": [
+   [
+    "4762",
+    "la dette a au contraire augmenté"
+   ]
+  ],
+  "rel": [
+   "477"
+  ]
+ },
+ "4778": {
+  "i": "Gain latent de change neutralisé par une couverture, par exemple une vente de devises à terme : l'écart est isolé ici, sans effet sur le résultat.",
+  "k": [
+   "couverture de change",
+   "vente à terme",
+   "devises",
+   "écart couvert"
+  ],
+  "nc": [
+   [
+    "4771",
+    "gain latent non couvert"
+   ]
+  ],
+  "rel": [
+   "477"
+  ]
+ },
+ "478": {
+  "i": "Opérations transitoires diverses qui ne sont pas de simples écritures en attente d'imputation : montants en cours de reclassement, opérations à dénouer. À solder avant la clôture.",
+  "k": [
+   "transitoire",
+   "à reclasser",
+   "à régulariser",
+   "compte de passage"
+  ],
+  "nc": [
+   [
+    "471",
+    "opération dont l'imputation est inconnue"
+   ],
+   [
+    "58",
+    "virement entre vos comptes de trésorerie"
+   ]
+  ],
+  "rel": [
+   "471"
+  ]
+ },
+ "4781": {
+  "i": "Part du mali technique de fusion rattachée à des actifs circulants, quand l'absorption d'une société fait apparaître un écart négatif. Opération rare, à traiter avec le cabinet.",
+  "k": [
+   "mali de fusion",
+   "fusion",
+   "absorption",
+   "mali technique",
+   "boni de fusion"
+  ],
+  "nc": [
+   [
+    "2187",
+    "mali affecté aux immobilisations corporelles"
+   ],
+   [
+    "2081",
+    "mali affecté aux immobilisations incorporelles"
+   ]
+  ]
+ },
+ "48": {
+  "i": "Les comptes qui rattachent charges et produits au bon exercice à la clôture : charges à répartir, charges et produits constatés d'avance, répartition périodique.",
+  "k": [
+   "régularisation",
+   "clôture",
+   "cut-off",
+   "CCA",
+   "PCA",
+   "rattachement"
+  ],
+  "rel": [
+   "481",
+   "486",
+   "487",
+   "488"
+  ]
+ },
+ "481": {
+  "i": "Charges étalées sur plusieurs exercices plutôt que passées en une fois : aujourd'hui, uniquement les frais d'émission d'un emprunt. Amorties chaque année par le 6812.",
+  "k": [
+   "charges à répartir",
+   "étalement",
+   "frais d'émission",
+   "amortissement des charges"
+  ],
+  "nc": [
+   [
+    "486",
+    "charge payée d'avance, pour l'exercice suivant seulement"
+   ],
+   [
+    "201",
+    "frais d'établissement, immobilisés"
+   ]
+  ],
+  "rel": [
+   "4816",
+   "6812"
+  ]
+ },
+ "4816": {
+  "i": "Frais d'émission d'un emprunt (commissions, frais de dossier) que vous choisissez d'étaler sur la durée de l'emprunt au lieu de les passer en charge tout de suite.",
+  "k": [
+   "frais d'émission",
+   "frais de dossier emprunt",
+   "commission d'emprunt",
+   "étalement"
+  ],
+  "nc": [
+   [
+    "6272",
+    "les mêmes frais passés directement en charge"
+   ]
+  ],
+  "rel": [
+   "481",
+   "6812",
+   "6272"
   ]
  },
  "486": {
@@ -6215,6 +9300,90 @@
    ]
   ]
  },
+ "488": {
+  "i": "Pour les situations intermédiaires : répartir sur les mois une charge ou un produit annuel connu d'avance, comme l'assurance ou la taxe foncière. Soldé avant la clôture annuelle.",
+  "k": [
+   "abonnement des charges",
+   "situation intermédiaire",
+   "répartition mensuelle",
+   "arrêté mensuel",
+   "lissage"
+  ],
+  "nc": [
+   [
+    "486",
+    "charge payée qui concerne l'exercice suivant"
+   ],
+   [
+    "487",
+    "produit facturé qui concerne l'exercice suivant"
+   ]
+  ],
+  "rel": [
+   "4886",
+   "4887"
+  ]
+ },
+ "4886": {
+  "i": "Charges annuelles connues d'avance réparties sur les périodes intermédiaires : assurance, taxe foncière, primes de fin d'année. Soldé à la clôture.",
+  "k": [
+   "abonnement des charges",
+   "charge mensualisée",
+   "situation intermédiaire",
+   "lissage"
+  ],
+  "nc": [
+   [
+    "486",
+    "charge constatée d'avance à la clôture"
+   ]
+  ],
+  "rel": [
+   "488"
+  ]
+ },
+ "4887": {
+  "i": "Produits annuels connus d'avance répartis sur les périodes intermédiaires : loyers, redevances, subvention annuelle. Soldé à la clôture.",
+  "k": [
+   "abonnement des produits",
+   "produit mensualisé",
+   "situation intermédiaire",
+   "lissage"
+  ],
+  "nc": [
+   [
+    "487",
+    "produit constaté d'avance à la clôture"
+   ]
+  ],
+  "rel": [
+   "488"
+  ]
+ },
+ "49": {
+  "i": "Dépréciations des créances sur les tiers dont le recouvrement est compromis : clients, groupe et associés, débiteurs divers. Dotation par le 68174, reprise par le 78174.",
+  "k": [
+   "dépréciation créance",
+   "créance douteuse",
+   "provision créance",
+   "recouvrement compromis"
+  ],
+  "nc": [
+   [
+    "654",
+    "perte définitive"
+   ],
+   [
+    "39",
+    "dépréciation des stocks"
+   ]
+  ],
+  "rel": [
+   "68174",
+   "78174",
+   "491"
+  ]
+ },
  "491": {
   "i": "Dépréciation des créances clients douteuses, à hauteur de la perte probable hors TVA.",
   "k": [
@@ -6229,6 +9398,124 @@
   ],
   "rel": [
    "416",
+   "68174",
+   "78174"
+  ]
+ },
+ "495": {
+  "i": "Dépréciation d'une créance sur une société du groupe ou un associé dont le recouvrement est compromis. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation compte courant",
+   "créance groupe douteuse",
+   "associé défaillant"
+  ],
+  "nc": [
+   [
+    "2967",
+    "dépréciation d'une créance rattachée à une participation"
+   ]
+  ],
+  "rel": [
+   "451",
+   "455",
+   "68174",
+   "78174"
+  ]
+ },
+ "4951": {
+  "i": "Dépréciation d'un compte courant débiteur d'une société du groupe (451) dont le remboursement est compromis. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation",
+   "compte courant groupe",
+   "filiale en difficulté"
+  ],
+  "rel": [
+   "451",
+   "68174",
+   "78174"
+  ]
+ },
+ "4955": {
+  "i": "Dépréciation d'un compte courant d'associé débiteur (455), quand l'associé doit de l'argent à la société et que son remboursement est compromis. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation",
+   "compte courant débiteur",
+   "CCA débiteur",
+   "associé"
+  ],
+  "rel": [
+   "455",
+   "68174",
+   "78174"
+  ]
+ },
+ "4958": {
+  "i": "Dépréciation des créances sur les partenaires d'une société en participation ou d'un GIE (458), quand leur recouvrement est compromis. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation",
+   "GIE",
+   "société en participation"
+  ],
+  "rel": [
+   "458",
+   "68174",
+   "78174"
+  ]
+ },
+ "496": {
+  "i": "Dépréciation des créances sur les débiteurs divers dont le recouvrement est compromis : acheteur d'une immobilisation, de titres de placement, débiteur divers. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation",
+   "débiteur divers",
+   "créance douteuse"
+  ],
+  "nc": [
+   [
+    "491",
+    "dépréciation d'une créance client"
+   ]
+  ],
+  "rel": [
+   "467",
+   "68174",
+   "78174"
+  ]
+ },
+ "4962": {
+  "i": "Dépréciation de la créance sur l'acheteur d'une immobilisation cédée (462) qui ne paie pas. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation",
+   "cession d'immobilisation",
+   "acheteur défaillant"
+  ],
+  "rel": [
+   "462",
+   "68174",
+   "78174"
+  ]
+ },
+ "4965": {
+  "i": "Dépréciation de la créance sur l'acheteur de titres de placement cédés (465) dont le paiement est compromis. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation",
+   "cession de titres",
+   "VMP"
+  ],
+  "rel": [
+   "465",
+   "68174",
+   "78174"
+  ]
+ },
+ "4967": {
+  "i": "Dépréciation d'une créance sur un débiteur divers (467) dont le recouvrement est compromis. Dotation 68174, reprise 78174.",
+  "k": [
+   "dépréciation",
+   "débiteur divers",
+   "créance douteuse"
+  ],
+  "rel": [
+   "467",
    "68174",
    "78174"
   ]
@@ -7392,6 +10679,31 @@
    "78665"
   ]
  },
+ "60": {
+  "i": "Tous vos achats de biens et de prestations consommés par l'activité, stockés ou non : matières, marchandises, fournitures, études incorporées. La variation des stocks, elle, va en 603.",
+  "k": [
+   "achat",
+   "approvisionnement",
+   "consommation",
+   "fournisseur"
+  ],
+  "nc": [
+   [
+    "61",
+    "services extérieurs : loyers, entretien, assurances"
+   ],
+   [
+    "21",
+    "bien durable, à immobiliser plutôt qu'à passer en achat"
+   ]
+  ],
+  "rel": [
+   "601",
+   "607",
+   "606",
+   "603"
+  ]
+ },
  "601": {
   "i": "Achats de matières premières destinées à être transformées, quand vous tenez un stock.",
   "k": [
@@ -7427,6 +10739,233 @@
    ]
   ]
  },
+ "6021": {
+  "i": "Matières consommables stockées : produits qui participent à la fabrication sans entrer dans la composition du produit fini, comme les lubrifiants ou les produits de traitement.",
+  "k": [
+   "consommable",
+   "lubrifiant",
+   "produit de traitement",
+   "matière secondaire"
+  ],
+  "nc": [
+   [
+    "601",
+    "matières premières qui entrent dans le produit"
+   ],
+   [
+    "6022",
+    "fournitures consommables stockées"
+   ]
+  ],
+  "rel": [
+   "321",
+   "6032"
+  ]
+ },
+ "6022": {
+  "i": "Fournitures consommables dont vous tenez un stock : combustibles, produits d'entretien, fournitures d'atelier, de magasin ou de bureau. Le détail se fait dans les sous-comptes.",
+  "k": [
+   "fournitures stockées",
+   "consommables",
+   "stock de fournitures"
+  ],
+  "nc": [
+   [
+    "606",
+    "les mêmes fournitures quand vous ne les stockez pas"
+   ]
+  ],
+  "rel": [
+   "322",
+   "6032"
+  ]
+ },
+ "60221": {
+  "i": "Combustibles stockés : fioul, gaz en citerne, charbon, bois, carburant en cuve.",
+  "k": [
+   "fioul",
+   "gaz",
+   "carburant en cuve",
+   "mazout",
+   "bois de chauffage"
+  ],
+  "nc": [
+   [
+    "6061",
+    "carburant et énergie achetés sans stock"
+   ]
+  ],
+  "rel": [
+   "3221"
+  ]
+ },
+ "60222": {
+  "i": "Produits d'entretien achetés en quantité et stockés : détergents, désinfectants, consommables de nettoyage.",
+  "k": [
+   "nettoyage",
+   "détergent",
+   "désinfectant",
+   "produit ménager"
+  ],
+  "nc": [
+   [
+    "6063",
+    "produits d'entretien achetés au fil de l'eau, sans stock"
+   ]
+  ],
+  "rel": [
+   "3222"
+  ]
+ },
+ "60223": {
+  "i": "Fournitures d'atelier et d'usine stockées : visserie, abrasifs, pièces de rechange courantes, consommables de production.",
+  "k": [
+   "visserie",
+   "pièces détachées",
+   "consommables atelier",
+   "abrasif",
+   "pièce de rechange"
+  ],
+  "nc": [
+   [
+    "6063",
+    "petit outillage non stocké"
+   ],
+   [
+    "2155",
+    "outillage durable, immobilisé"
+   ]
+  ],
+  "rel": [
+   "3223"
+  ]
+ },
+ "60224": {
+  "i": "Fournitures de magasin stockées : sacs, étiquettes, tickets, consommables de la surface de vente.",
+  "k": [
+   "sac",
+   "étiquette",
+   "sachet",
+   "consommables magasin",
+   "rouleau caisse"
+  ],
+  "nc": [
+   [
+    "6026",
+    "emballages des produits vendus"
+   ]
+  ],
+  "rel": [
+   "3224"
+  ]
+ },
+ "60225": {
+  "i": "Fournitures de bureau quand vous les achetez en volume et suivez le stock : papier, cartouches, enveloppes.",
+  "k": [
+   "papeterie",
+   "papier",
+   "cartouche",
+   "stock papeterie"
+  ],
+  "nc": [
+   [
+    "6064",
+    "fournitures de bureau non stockées, cas le plus courant"
+   ]
+  ],
+  "rel": [
+   "3225"
+  ]
+ },
+ "6026": {
+  "i": "Achats d'emballages stockés : cartons, bouteilles, palettes, films, caisses. Ventilez selon que l'emballage est perdu, récupérable ou mixte.",
+  "k": [
+   "carton",
+   "bouteille",
+   "palette",
+   "film",
+   "conditionnement",
+   "caisse"
+  ],
+  "nc": [
+   [
+    "2186",
+    "emballages récupérables identifiables, qui sont des immobilisations"
+   ],
+   [
+    "60224",
+    "fournitures de magasin"
+   ]
+  ],
+  "rel": [
+   "326",
+   "60261",
+   "60265"
+  ]
+ },
+ "60261": {
+  "i": "Emballages livrés avec la marchandise et non repris : cartons, sachets, films, bouteilles jetables.",
+  "k": [
+   "carton",
+   "sachet",
+   "jetable",
+   "emballage non repris",
+   "conditionnement"
+  ],
+  "nc": [
+   [
+    "60265",
+    "emballages consignés que le client vous rend"
+   ]
+  ],
+  "rel": [
+   "3261"
+  ]
+ },
+ "60265": {
+  "i": "Emballages consignés ou prêtés qui reviennent chez vous mais qu'on ne peut pas suivre un par un : casiers, bouteilles consignées, palettes standard.",
+  "k": [
+   "consigne",
+   "casier",
+   "bouteille consignée",
+   "palette"
+  ],
+  "nc": [
+   [
+    "2186",
+    "emballages récupérables identifiables, immobilisés"
+   ],
+   [
+    "4196",
+    "dette envers les clients pour la consigne"
+   ]
+  ],
+  "rel": [
+   "3265",
+   "4196"
+  ]
+ },
+ "60267": {
+  "i": "Emballages tantôt vendus avec le produit, tantôt consignés et repris, sans qu'on sache à l'achat ce qu'il en sera.",
+  "k": [
+   "mixte",
+   "consigné ou perdu",
+   "emballage polyvalent"
+  ],
+  "nc": [
+   [
+    "60261",
+    "emballages toujours perdus"
+   ],
+   [
+    "60265",
+    "emballages toujours récupérables"
+   ]
+  ],
+  "rel": [
+   "3267"
+  ]
+ },
  "603": {
   "i": "Variation des stocks d'achats entre l'ouverture et la clôture. Débit si le stock a diminué, crédit s'il a augmenté.",
   "k": [
@@ -7444,6 +10983,79 @@
   "rel": [
    "37",
    "31"
+  ]
+ },
+ "6031": {
+  "i": "À la clôture : stock final moins stock initial de matières premières. Au débit si le stock a baissé, au crédit s'il a augmenté, en contrepartie du 31.",
+  "k": [
+   "variation de stock",
+   "inventaire",
+   "stock initial",
+   "stock final",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6032",
+    "variation des autres approvisionnements"
+   ],
+   [
+    "6037",
+    "variation des marchandises"
+   ]
+  ],
+  "rel": [
+   "31",
+   "601"
+  ]
+ },
+ "6032": {
+  "i": "À la clôture : différence entre le stock d'ouverture et le stock d'inventaire des autres approvisionnements, fournitures et emballages, en contrepartie du 32.",
+  "k": [
+   "variation de stock",
+   "inventaire",
+   "fournitures",
+   "emballages",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6031",
+    "variation des matières premières"
+   ],
+   [
+    "6037",
+    "variation des marchandises"
+   ]
+  ],
+  "rel": [
+   "32",
+   "602"
+  ]
+ },
+ "6037": {
+  "i": "À la clôture : ajustement du stock de marchandises entre l'ouverture et l'inventaire, en contrepartie du 37. Débit si le stock a diminué, crédit s'il a augmenté.",
+  "k": [
+   "variation de stock",
+   "inventaire",
+   "négoce",
+   "stock initial",
+   "stock final",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "607",
+    "les achats de l'exercice"
+   ],
+   [
+    "713",
+    "variation des produits que vous fabriquez"
+   ]
+  ],
+  "rel": [
+   "37",
+   "607"
   ]
  },
  "604": {
@@ -7490,6 +11102,31 @@
     "2154",
     "matériel que vous gardez pour produire"
    ]
+  ]
+ },
+ "606": {
+  "i": "Matières et fournitures consommées sans passer par un stock : eau, énergie, petit équipement, fournitures de bureau. Le détail se fait dans les sous-comptes.",
+  "k": [
+   "fournitures",
+   "consommables",
+   "non stocké",
+   "achat courant"
+  ],
+  "nc": [
+   [
+    "602",
+    "fournitures dont vous suivez le stock"
+   ],
+   [
+    "61",
+    "prestations de services"
+   ]
+  ],
+  "rel": [
+   "6061",
+   "6063",
+   "6064",
+   "6068"
   ]
  },
  "6061": {
@@ -7605,6 +11242,30 @@
    "707"
   ]
  },
+ "608": {
+  "i": "Frais accessoires d'achat, si vous choisissez de les isoler ici plutôt que dans les services extérieurs : transport, droits de douane, assurance, commissions sur vos achats.",
+  "k": [
+   "frais d'approche",
+   "droits de douane",
+   "transport sur achats",
+   "coût d'acquisition",
+   "douane"
+  ],
+  "nc": [
+   [
+    "6241",
+    "transport sur achats laissé en services extérieurs"
+   ],
+   [
+    "6224",
+    "honoraires du transitaire"
+   ]
+  ],
+  "rel": [
+   "601",
+   "607"
+  ]
+ },
  "609": {
   "i": "Rabais, remises et ristournes obtenus après la facture d'achat, quand l'avoir ne peut pas être rattaché à un achat précis.",
   "k": [
@@ -7618,6 +11279,130 @@
     "765",
     "escompte obtenu pour paiement anticipé"
    ]
+  ]
+ },
+ "6091": {
+  "i": "Remises et ristournes obtenues après coup sur vos achats de matières premières, quand l'avoir ne se rattache pas à une facture précise.",
+  "k": [
+   "avoir fournisseur",
+   "ristourne de fin d'année",
+   "remise"
+  ],
+  "rel": [
+   "601"
+  ]
+ },
+ "6092": {
+  "i": "Avoirs reçus après coup sur les achats d'autres approvisionnements stockés : fournitures, consommables, emballages.",
+  "k": [
+   "avoir fournisseur",
+   "ristourne",
+   "remise",
+   "consommables"
+  ],
+  "rel": [
+   "602"
+  ]
+ },
+ "6094": {
+  "i": "Avoirs et ristournes obtenus sur les études et prestations achetées pour être revendues au client.",
+  "k": [
+   "avoir",
+   "ristourne",
+   "remise",
+   "prestation"
+  ],
+  "rel": [
+   "604"
+  ]
+ },
+ "6095": {
+  "i": "Avoirs et ristournes obtenus sur le matériel, les équipements et les travaux incorporés à ce que vous vendez.",
+  "k": [
+   "avoir",
+   "ristourne",
+   "remise",
+   "travaux"
+  ],
+  "rel": [
+   "605"
+  ]
+ },
+ "6096": {
+  "i": "Avoirs et ristournes obtenus sur les fournitures non stockées : énergie, petit équipement, fournitures de bureau.",
+  "k": [
+   "avoir",
+   "ristourne",
+   "remise",
+   "fournitures"
+  ],
+  "rel": [
+   "606"
+  ]
+ },
+ "6097": {
+  "i": "Ristournes de fin d'année et avoirs obtenus sur vos achats de marchandises, non rattachés à une facture précise.",
+  "k": [
+   "avoir fournisseur",
+   "ristourne de fin d'année",
+   "remise",
+   "négoce"
+  ],
+  "nc": [
+   [
+    "765",
+    "escompte pour paiement anticipé"
+   ]
+  ],
+  "rel": [
+   "607"
+  ]
+ },
+ "6098": {
+  "i": "Ristournes globales d'un fournisseur qu'on ne peut pas ventiler par type d'achat : ristourne annuelle sur l'ensemble des commandes.",
+  "k": [
+   "ristourne globale",
+   "avoir non ventilé",
+   "remise de fin d'année",
+   "rfa"
+  ],
+  "nc": [
+   [
+    "6097",
+    "avoir affectable aux marchandises"
+   ],
+   [
+    "765",
+    "escompte de règlement"
+   ]
+  ],
+  "rel": [
+   "609"
+  ]
+ },
+ "61": {
+  "i": "Les services que des tiers vous rendent pour faire tourner l'entreprise : sous-traitance, loyers, crédit-bail, entretien, assurances, documentation.",
+  "k": [
+   "prestataire",
+   "charges externes",
+   "services",
+   "frais généraux"
+  ],
+  "nc": [
+   [
+    "62",
+    "autres services extérieurs : honoraires, publicité, transports, télécoms"
+   ],
+   [
+    "60",
+    "achats de biens et de fournitures"
+   ]
+  ],
+  "rel": [
+   "611",
+   "613",
+   "615",
+   "616"
   ]
  },
  "611": {
@@ -7640,6 +11425,30 @@
     "6226",
     "honoraires"
    ]
+  ]
+ },
+ "612": {
+  "i": "Les loyers versés au crédit-bailleur pour un bien financé en crédit-bail, mobilier ou immobilier. Le bien n'est pas à votre bilan tant que l'option d'achat n'est pas levée.",
+  "k": [
+   "leasing",
+   "loyer de crédit-bail",
+   "location avec option d'achat",
+   "LOA"
+  ],
+  "nc": [
+   [
+    "613",
+    "location simple, sans option d'achat"
+   ],
+   [
+    "164",
+    "emprunt pour acheter le bien"
+   ]
+  ],
+  "rel": [
+   "6122",
+   "6125",
+   "8016"
   ]
  },
  "6122": {
@@ -7668,6 +11477,54 @@
   ],
   "rel": [
    "8016"
+  ]
+ },
+ "6125": {
+  "i": "Loyers de crédit-bail sur un immeuble : bureaux, entrepôt, magasin financés en crédit-bail, avec option d'achat à terme.",
+  "k": [
+   "leasing immobilier",
+   "local en crédit-bail",
+   "loyer de crédit-bail"
+  ],
+  "nc": [
+   [
+    "6132",
+    "simple location de locaux"
+   ],
+   [
+    "6122",
+    "crédit-bail sur du matériel ou des véhicules"
+   ],
+   [
+    "2131",
+    "immeuble dont vous êtes propriétaire"
+   ]
+  ],
+  "rel": [
+   "80165"
+  ]
+ },
+ "613": {
+  "i": "Loyers des biens que vous louez sans option d'achat : locaux, matériel, véhicules. Ventilez entre immobilier et mobilier.",
+  "k": [
+   "loyer",
+   "location",
+   "bail",
+   "louer"
+  ],
+  "nc": [
+   [
+    "612",
+    "crédit-bail, avec option d'achat"
+   ],
+   [
+    "614",
+    "charges locatives refacturées"
+   ]
+  ],
+  "rel": [
+   "6132",
+   "6135"
   ]
  },
  "6132": {
@@ -7714,6 +11571,28 @@
    ]
   ]
  },
+ "6136": {
+  "i": "Emballages consignés par un fournisseur que vous lui rendez : la différence entre la consigne payée et le prix de reprise est une charge, assimilée à une location.",
+  "k": [
+   "consigne",
+   "emballage rendu",
+   "reprise d'emballage",
+   "mali"
+  ],
+  "nc": [
+   [
+    "6026",
+    "emballages achetés et conservés"
+   ],
+   [
+    "7086",
+    "le boni, côté vendeur, quand vous consignez vous-même"
+   ]
+  ],
+  "rel": [
+   "4096"
+  ]
+ },
  "614": {
   "i": "Charges locatives et de copropriété : provisions pour charges, taxes refacturées par le bailleur, appels du syndic.",
   "k": [
@@ -7755,6 +11634,59 @@
    ]
   ]
  },
+ "6152": {
+  "i": "Entretien et réparations des bâtiments et locaux : toiture, plomberie, peinture, réfection sans amélioration durable.",
+  "k": [
+   "toiture",
+   "plomberie",
+   "peinture",
+   "réparation bâtiment",
+   "climatisation",
+   "réfection"
+  ],
+  "nc": [
+   [
+    "2135",
+    "travaux qui augmentent la valeur ou la durée du bâtiment"
+   ],
+   [
+    "614",
+    "travaux refacturés par le bailleur ou le syndic"
+   ]
+  ],
+  "rel": [
+   "2131"
+  ]
+ },
+ "6155": {
+  "i": "Entretien et réparations du matériel et des véhicules : révision, pneus, garagiste, réparation d'une machine ou d'un ordinateur.",
+  "k": [
+   "garagiste",
+   "révision",
+   "pneus",
+   "réparation véhicule",
+   "réparation machine",
+   "dépannage"
+  ],
+  "nc": [
+   [
+    "6156",
+    "contrat de maintenance forfaitaire"
+   ],
+   [
+    "6063",
+    "pièces et petit outillage achetés"
+   ],
+   [
+    "2182",
+    "remplacement complet du véhicule"
+   ]
+  ],
+  "rel": [
+   "2182",
+   "2154"
+  ]
+ },
  "6156": {
   "i": "Contrats de maintenance : informatique, ascenseur, climatisation, copieur.",
   "k": [
@@ -7794,6 +11726,179 @@
    ]
   ]
  },
+ "6161": {
+  "i": "Assurance multirisque des locaux et de leur contenu : incendie, dégâts des eaux, vol, bris de glace, responsabilité civile associée.",
+  "k": [
+   "assurance locaux",
+   "incendie",
+   "vol",
+   "dégât des eaux",
+   "multirisque professionnelle"
+  ],
+  "nc": [
+   [
+    "6164",
+    "assurance des pertes d'exploitation"
+   ],
+   [
+    "6452",
+    "mutuelle du personnel"
+   ]
+  ],
+  "rel": [
+   "616"
+  ]
+ },
+ "6162": {
+  "i": "Assurance dommages-ouvrage souscrite avant des travaux de construction, pour être indemnisé rapidement en cas de malfaçon.",
+  "k": [
+   "dommages-ouvrage",
+   "construction",
+   "malfaçon",
+   "assurance chantier",
+   "décennale"
+  ],
+  "nc": [
+   [
+    "6161",
+    "multirisque des locaux existants"
+   ],
+   [
+    "2131",
+    "le coût de la construction elle-même"
+   ]
+  ],
+  "rel": [
+   "616",
+   "231"
+  ]
+ },
+ "6163": {
+  "i": "Assurance des marchandises pendant leur transport, à l'achat, à la vente ou pour vos autres biens déplacés.",
+  "k": [
+   "assurance fret",
+   "marchandises en transit",
+   "transport maritime",
+   "assurance colis"
+  ],
+  "nc": [
+   [
+    "6241",
+    "le transport lui-même"
+   ],
+   [
+    "6161",
+    "assurance des locaux"
+   ]
+  ],
+  "rel": [
+   "61636",
+   "61637",
+   "61638"
+  ]
+ },
+ "61636": {
+  "i": "Part de l'assurance-transport qui couvre les marchandises que vous achetez pendant leur acheminement.",
+  "k": [
+   "assurance fret",
+   "import",
+   "marchandises achetées",
+   "transit"
+  ],
+  "nc": [
+   [
+    "6241",
+    "frais de transport sur achats"
+   ],
+   [
+    "608",
+    "si vous incorporez ces frais au coût d'achat"
+   ]
+  ],
+  "rel": [
+   "6163"
+  ]
+ },
+ "61637": {
+  "i": "Part de l'assurance-transport qui couvre les marchandises que vous expédiez à vos clients.",
+  "k": [
+   "assurance expédition",
+   "livraison client",
+   "export"
+  ],
+  "nc": [
+   [
+    "6242",
+    "frais de transport sur ventes"
+   ]
+  ],
+  "rel": [
+   "6163"
+  ]
+ },
+ "61638": {
+  "i": "Assurance des autres biens transportés : matériel déplacé entre chantiers ou établissements, déménagement.",
+  "k": [
+   "matériel transporté",
+   "chantier",
+   "déménagement"
+  ],
+  "nc": [
+   [
+    "6243",
+    "transport entre établissements ou chantiers"
+   ]
+  ],
+  "rel": [
+   "6163"
+  ]
+ },
+ "6164": {
+  "i": "Assurances qui couvrent l'activité elle-même : pertes d'exploitation, bris de machine, responsabilité civile exploitation, flotte automobile.",
+  "k": [
+   "pertes d'exploitation",
+   "bris de machine",
+   "rc exploitation",
+   "flotte automobile",
+   "assurance auto"
+  ],
+  "nc": [
+   [
+    "6161",
+    "multirisque des locaux"
+   ],
+   [
+    "6165",
+    "assurance contre les impayés clients"
+   ]
+  ],
+  "rel": [
+   "616"
+  ]
+ },
+ "6165": {
+  "i": "Assurance-crédit : la prime versée pour être couvert contre les impayés de vos clients.",
+  "k": [
+   "assurance-crédit",
+   "impayé",
+   "coface",
+   "garantie client",
+   "recouvrement"
+  ],
+  "nc": [
+   [
+    "6225",
+    "commissions d'affacturage"
+   ],
+   [
+    "491",
+    "dépréciation d'une créance douteuse"
+   ]
+  ],
+  "rel": [
+   "616"
+  ]
+ },
  "617": {
   "i": "Études et recherches commandées à des tiers pour les besoins propres de l'entreprise.",
   "k": [
@@ -7810,6 +11915,20 @@
     "203",
     "frais de développement immobilisés"
    ]
+  ]
+ },
+ "618": {
+  "i": "Services extérieurs divers : documentation générale et technique, colloques et séminaires.",
+  "k": [
+   "documentation",
+   "séminaire",
+   "abonnement",
+   "frais divers"
+  ],
+  "rel": [
+   "6181",
+   "6183",
+   "6185"
   ]
  },
  "6181": {
@@ -7829,6 +11948,31 @@
    [
     "6511",
     "abonnement à un logiciel"
+   ]
+  ]
+ },
+ "6183": {
+  "i": "Documentation technique : normes, manuels, bases de données métier, abonnements à des revues spécialisées.",
+  "k": [
+   "normes",
+   "manuel",
+   "base documentaire",
+   "revue spécialisée",
+   "documentation métier",
+   "abonnement technique"
+  ],
+  "nc": [
+   [
+    "6181",
+    "presse et documentation générale"
+   ],
+   [
+    "6511",
+    "abonnement à un logiciel"
+   ],
+   [
+    "205",
+    "logiciel ou base acquis durablement"
    ]
   ]
  },
@@ -7856,6 +12000,74 @@
    ]
   ]
  },
+ "619": {
+  "i": "Avoirs et ristournes obtenus sur les services extérieurs, quand ils ne peuvent pas être rattachés à une facture précise : remise d'un loueur, ristourne d'un assureur.",
+  "k": [
+   "avoir",
+   "ristourne",
+   "remise",
+   "avoir prestataire"
+  ],
+  "nc": [
+   [
+    "609",
+    "avoir sur achats de biens"
+   ],
+   [
+    "629",
+    "avoir sur autres services extérieurs"
+   ],
+   [
+    "765",
+    "escompte pour paiement anticipé"
+   ]
+  ]
+ },
+ "62": {
+  "i": "Les autres services extérieurs : intérim, honoraires, publicité, transports, déplacements, télécoms, frais bancaires, cotisations.",
+  "k": [
+   "honoraires",
+   "publicité",
+   "déplacements",
+   "frais bancaires",
+   "charges externes"
+  ],
+  "nc": [
+   [
+    "61",
+    "sous-traitance, loyers, entretien, assurances"
+   ]
+  ],
+  "rel": [
+   "622",
+   "623",
+   "625",
+   "626"
+  ]
+ },
+ "621": {
+  "i": "Personnel qui travaille pour vous sans être salarié de l'entreprise : intérimaires, salariés détachés ou prêtés par une autre société.",
+  "k": [
+   "intérim",
+   "mise à disposition",
+   "personnel prêté",
+   "détachement"
+  ],
+  "nc": [
+   [
+    "641",
+    "vos propres salariés"
+   ],
+   [
+    "611",
+    "sous-traitance d'une tâche"
+   ]
+  ],
+  "rel": [
+   "6211",
+   "6214"
+  ]
+ },
  "6211": {
   "i": "Factures des agences d'intérim.",
   "k": [
@@ -7874,6 +12086,80 @@
    ]
   ]
  },
+ "6214": {
+  "i": "Refacturation, par une autre entreprise, souvent du même groupe, d'un salarié qu'elle vous détache ou vous prête.",
+  "k": [
+   "détachement",
+   "mise à disposition",
+   "personnel groupe",
+   "refacturation salaire",
+   "salarié prêté"
+  ],
+  "nc": [
+   [
+    "6211",
+    "agence d'intérim"
+   ],
+   [
+    "641",
+    "salarié que vous employez directement"
+   ],
+   [
+    "7084",
+    "le produit, côté entreprise qui prête"
+   ]
+  ],
+  "rel": [
+   "7084"
+  ]
+ },
+ "622": {
+  "i": "Rémunérations versées à des intermédiaires et professions libérales : commissions, transitaires, affacturage, honoraires, frais d'actes.",
+  "k": [
+   "commission",
+   "honoraires",
+   "intermédiaire",
+   "courtage"
+  ],
+  "nc": [
+   [
+    "611",
+    "sous-traitance"
+   ],
+   [
+    "604",
+    "prestation revendue au client"
+   ]
+  ],
+  "rel": [
+   "6226",
+   "6222",
+   "6227"
+  ]
+ },
+ "6221": {
+  "i": "Commissions et courtages versés aux intermédiaires qui vous aident à acheter : courtier, agent d'achat, centrale de référencement.",
+  "k": [
+   "courtier",
+   "agent d'achat",
+   "centrale d'achat",
+   "commission import"
+  ],
+  "nc": [
+   [
+    "6222",
+    "commissions sur vos ventes"
+   ],
+   [
+    "6224",
+    "transitaires en douane"
+   ],
+   [
+    "608",
+    "si vous incorporez ces frais au coût d'achat"
+   ]
+  ]
+ },
  "6222": {
   "i": "Commissions versées à des intermédiaires ou apporteurs d'affaires sur vos ventes.",
   "k": [
@@ -7886,6 +12172,49 @@
    [
     "6226",
     "honoraires"
+   ]
+  ]
+ },
+ "6224": {
+  "i": "Honoraires du transitaire : dédouanement, formalités d'import-export, déclarations en douane.",
+  "k": [
+   "transitaire",
+   "dédouanement",
+   "commissionnaire en douane",
+   "import",
+   "déclaration en douane"
+  ],
+  "nc": [
+   [
+    "6241",
+    "le fret lui-même"
+   ],
+   [
+    "6353",
+    "droits et taxes payés à la douane"
+   ],
+   [
+    "608",
+    "frais accessoires incorporés au coût d'achat"
+   ]
+  ]
+ },
+ "6225": {
+  "i": "Commissions prélevées par le factor pour la gestion et la garantie des créances que vous lui cédez.",
+  "k": [
+   "factor",
+   "factoring",
+   "commission d'affacturage",
+   "cession de créances"
+  ],
+  "nc": [
+   [
+    "6616",
+    "intérêts du financement accordé par le factor"
+   ],
+   [
+    "6165",
+    "assurance-crédit classique"
    ]
   ]
  },
@@ -7965,6 +12294,31 @@
    ]
   ]
  },
+ "623": {
+  "i": "Dépenses de communication : annonces, échantillons, salons, cadeaux clients, catalogues, publications, relations publiques.",
+  "k": [
+   "communication",
+   "marketing",
+   "promotion",
+   "relations publiques"
+  ],
+  "nc": [
+   [
+    "6257",
+    "réceptions et invitations"
+   ],
+   [
+    "6227",
+    "annonces légales"
+   ]
+  ],
+  "rel": [
+   "6231",
+   "6233",
+   "6234",
+   "6236"
+  ]
+ },
  "6231": {
   "i": "Annonces et insertions publicitaires, dans la presse, sur internet, sur les réseaux sociaux.",
   "k": [
@@ -7984,6 +12338,49 @@
    [
     "6227",
     "annonce légale"
+   ]
+  ]
+ },
+ "6232": {
+  "i": "Produits offerts en échantillon à des prospects ou clients, et échantillons achetés pour être distribués.",
+  "k": [
+   "échantillon gratuit",
+   "produit offert",
+   "démonstration",
+   "testeur"
+  ],
+  "nc": [
+   [
+    "6234",
+    "cadeaux à la clientèle"
+   ],
+   [
+    "6235",
+    "primes remises lors d'une promotion"
+   ]
+  ]
+ },
+ "6233": {
+  "i": "Participation à des salons et expositions : location du stand, inscription, aménagement, frais du salon.",
+  "k": [
+   "salon",
+   "stand",
+   "exposition",
+   "foire",
+   "événement commercial"
+  ],
+  "nc": [
+   [
+    "6185",
+    "colloques et séminaires auxquels vous assistez"
+   ],
+   [
+    "6251",
+    "déplacement pour s'y rendre"
+   ],
+   [
+    "6257",
+    "réception organisée sur le stand"
    ]
   ]
  },
@@ -8007,6 +12404,30 @@
    ]
   ]
  },
+ "6235": {
+  "i": "Primes et cadeaux promotionnels remis aux clients dans le cadre d'une opération commerciale : cadeau pour un achat, prime de fidélité, lot d'un jeu-concours.",
+  "k": [
+   "prime promotionnelle",
+   "jeu-concours",
+   "fidélité",
+   "cadeau promotionnel",
+   "opération commerciale"
+  ],
+  "nc": [
+   [
+    "6234",
+    "cadeau à un client hors opération promotionnelle"
+   ],
+   [
+    "6232",
+    "échantillon"
+   ],
+   [
+    "709",
+    "remise en argent sur la facture"
+   ]
+  ]
+ },
  "6236": {
   "i": "Catalogues, prospectus, cartes de visite, flyers et imprimés publicitaires.",
   "k": [
@@ -8021,6 +12442,74 @@
     "6064",
     "papeterie courante"
    ]
+  ]
+ },
+ "6237": {
+  "i": "Publications que vous éditez : rapport annuel, plaquette institutionnelle, journal d'entreprise, ouvrages.",
+  "k": [
+   "rapport annuel",
+   "plaquette",
+   "brochure",
+   "édition",
+   "journal interne"
+  ],
+  "nc": [
+   [
+    "6236",
+    "catalogues et imprimés publicitaires"
+   ],
+   [
+    "6231",
+    "annonces dans la presse"
+   ],
+   [
+    "6227",
+    "annonce légale au journal officiel"
+   ]
+  ]
+ },
+ "6238": {
+  "i": "Petites dépenses de relations publiques sans compte dédié : pourboires, dons courants de faible importance.",
+  "k": [
+   "pourboire",
+   "don courant",
+   "gratification",
+   "petit don"
+  ],
+  "nc": [
+   [
+    "6713",
+    "don ou mécénat significatif"
+   ],
+   [
+    "6234",
+    "cadeau à un client"
+   ],
+   [
+    "6474",
+    "cadeaux au personnel"
+   ]
+  ]
+ },
+ "624": {
+  "i": "Le transport des biens et des personnes en groupe : livraisons sur achats et ventes, transferts entre sites, transports collectifs du personnel.",
+  "k": [
+   "transport",
+   "fret",
+   "livraison",
+   "port",
+   "coursier"
+  ],
+  "nc": [
+   [
+    "6251",
+    "déplacements individuels des salariés"
+   ]
+  ],
+  "rel": [
+   "6241",
+   "6242",
+   "6247"
   ]
  },
  "6241": {
@@ -8041,6 +12530,125 @@
     "6251",
     "déplacement des personnes"
    ]
+  ]
+ },
+ "6242": {
+  "i": "Frais de livraison des marchandises que vous vendez : transporteur, messagerie, coursier, fret vers le client.",
+  "k": [
+   "livraison client",
+   "port",
+   "messagerie",
+   "expédition",
+   "fret",
+   "colis"
+  ],
+  "nc": [
+   [
+    "6241",
+    "transport de vos achats"
+   ],
+   [
+    "7085",
+    "les frais de port que vous refacturez au client"
+   ]
+  ],
+  "rel": [
+   "7085"
+  ]
+ },
+ "6243": {
+  "i": "Transports de matériel ou de marchandises entre vos propres établissements, dépôts ou chantiers.",
+  "k": [
+   "transfert",
+   "navette",
+   "chantier",
+   "livraison interne",
+   "dépôt"
+  ],
+  "nc": [
+   [
+    "6242",
+    "livraison à un client"
+   ],
+   [
+    "6247",
+    "transport du personnel"
+   ]
+  ]
+ },
+ "6244": {
+  "i": "Transports administratifs : coursier pour des documents, envoi de plis, transport de matériel de bureau.",
+  "k": [
+   "coursier",
+   "pli",
+   "document",
+   "transport de documents"
+  ],
+  "nc": [
+   [
+    "626",
+    "affranchissement postal"
+   ],
+   [
+    "6248",
+    "autres transports non classés"
+   ]
+  ]
+ },
+ "6247": {
+  "i": "Transport du personnel organisé ou pris en charge par l'entreprise : navette, car, remboursement des abonnements de transport en commun.",
+  "k": [
+   "navette",
+   "car",
+   "bus",
+   "abonnement transport",
+   "trajet domicile-travail"
+  ],
+  "nc": [
+   [
+    "6251",
+    "déplacement professionnel individuel"
+   ],
+   [
+    "6414",
+    "indemnité de transport versée avec le salaire"
+   ]
+  ]
+ },
+ "6248": {
+  "i": "Autres transports de biens qui n'entrent dans aucun sous-compte : déplacement de matériel loué, transport de déchets.",
+  "k": [
+   "transport divers",
+   "enlèvement",
+   "déchets",
+   "matériel loué"
+  ],
+  "nc": [
+   [
+    "6255",
+    "déménagement de l'entreprise"
+   ]
+  ]
+ },
+ "625": {
+  "i": "Déplacements, missions et réceptions : voyages, hôtel, repas en mission, invitations de clients, déménagement.",
+  "k": [
+   "voyage",
+   "note de frais",
+   "hôtel",
+   "restaurant",
+   "déplacement"
+  ],
+  "nc": [
+   [
+    "624",
+    "transport de marchandises"
+   ]
+  ],
+  "rel": [
+   "6251",
+   "6256",
+   "6257"
   ]
  },
  "6251": {
@@ -8069,6 +12677,24 @@
    [
     "6247",
     "transport collectif du personnel"
+   ]
+  ]
+ },
+ "6255": {
+  "i": "Déménagement des locaux de l'entreprise : déménageur, transport du mobilier et du matériel.",
+  "k": [
+   "déménageur",
+   "transfert de locaux",
+   "changement de locaux"
+  ],
+  "nc": [
+   [
+    "6414",
+    "frais de déménagement d'un salarié muté"
+   ],
+   [
+    "2181",
+    "aménagement des nouveaux locaux"
    ]
   ]
  },
@@ -8138,6 +12764,109 @@
    ]
   ]
  },
+ "627": {
+  "i": "Services facturés par la banque : tenue de compte, commissions, frais sur titres, sur effets, sur emprunts, coffres. Les intérêts, eux, sont des charges financières.",
+  "k": [
+   "frais bancaires",
+   "commission",
+   "banque",
+   "frais de dossier"
+  ],
+  "nc": [
+   [
+    "6616",
+    "agios et intérêts"
+   ],
+   [
+    "661",
+    "intérêts d'emprunt"
+   ]
+  ],
+  "rel": [
+   "6278",
+   "6271",
+   "6272"
+  ]
+ },
+ "6271": {
+  "i": "Frais de courtage et droits de garde sur vos titres : achat, vente, conservation en portefeuille.",
+  "k": [
+   "courtage",
+   "droits de garde",
+   "frais de bourse",
+   "titres"
+  ],
+  "nc": [
+   [
+    "667",
+    "moins-value sur la vente de titres de placement"
+   ],
+   [
+    "261",
+    "frais d'acquisition des titres de participation, si immobilisés"
+   ]
+  ]
+ },
+ "6272": {
+  "i": "Frais de mise en place d'un emprunt : frais de dossier, commission d'engagement, frais d'émission.",
+  "k": [
+   "frais de dossier",
+   "commission d'engagement",
+   "frais d'emprunt",
+   "mise en place prêt"
+  ],
+  "nc": [
+   [
+    "6611",
+    "les intérêts de l'emprunt"
+   ],
+   [
+    "4816",
+    "frais étalés sur la durée de l'emprunt, sur option"
+   ]
+  ],
+  "rel": [
+   "164"
+  ]
+ },
+ "6275": {
+  "i": "Commissions bancaires sur les effets de commerce : encaissement, remise à l'escompte, frais d'impayé.",
+  "k": [
+   "effet",
+   "traite",
+   "lettre de change",
+   "frais d'impayé",
+   "commission d'encaissement"
+  ],
+  "nc": [
+   [
+    "6616",
+    "intérêts de l'escompte"
+   ],
+   [
+    "6278",
+    "autres frais bancaires"
+   ]
+  ],
+  "rel": [
+   "5113",
+   "5114"
+  ]
+ },
+ "6276": {
+  "i": "Loyer du coffre-fort loué auprès de la banque pour y garder des valeurs ou des documents.",
+  "k": [
+   "coffre-fort",
+   "coffre bancaire",
+   "banque"
+  ],
+  "nc": [
+   [
+    "6135",
+    "location de matériel"
+   ]
+  ]
+ },
  "6278": {
   "i": "Frais bancaires et commissions : tenue de compte, commissions sur cartes, frais de virement.",
   "k": [
@@ -8152,6 +12881,25 @@
     "6616",
     "intérêts et agios, qui sont des charges financières"
    ]
+  ]
+ },
+ "628": {
+  "i": "Divers autres services extérieurs : cotisations à des organismes, frais de recrutement, prestations sans compte dédié.",
+  "k": [
+   "cotisation",
+   "recrutement",
+   "adhésion",
+   "divers"
+  ],
+  "nc": [
+   [
+    "6228",
+    "rémunérations d'intermédiaires diverses et formations"
+   ]
+  ],
+  "rel": [
+   "6281",
+   "6284"
   ]
  },
  "6281": {
@@ -8181,6 +12929,59 @@
    "chasseur de têtes"
   ]
  },
+ "629": {
+  "i": "Avoirs et ristournes obtenus sur les autres services extérieurs, non rattachables à une facture précise : remise d'un transporteur, geste d'un prestataire.",
+  "k": [
+   "avoir",
+   "ristourne",
+   "remise",
+   "geste commercial prestataire"
+  ],
+  "nc": [
+   [
+    "619",
+    "avoir sur services extérieurs"
+   ],
+   [
+    "609",
+    "avoir sur achats de biens"
+   ],
+   [
+    "765",
+    "escompte pour paiement anticipé"
+   ]
+  ]
+ },
+ "63": {
+  "i": "Impôts, taxes et versements assimilés supportés par l'entreprise, sauf l'impôt sur les bénéfices et la TVA récupérable : taxes sur salaires, patente, taxes foncières, droits d'enregistrement.",
+  "k": [
+   "taxe",
+   "impôt",
+   "patente",
+   "fisc",
+   "contribution"
+  ],
+  "nc": [
+   [
+    "695",
+    "l'impôt sur les bénéfices"
+   ],
+   [
+    "645",
+    "cotisations sociales"
+   ],
+   [
+    "4456",
+    "TVA ou TGC récupérable"
+   ]
+  ],
+  "rel": [
+   "631",
+   "633",
+   "635",
+   "637"
+  ]
+ },
  "631": {
   "i": "Impôts et taxes assis sur les salaires, dus à l'administration fiscale.",
   "k": [
@@ -8193,6 +12994,248 @@
     "645",
     "cotisations sociales versées aux organismes sociaux"
    ]
+  ]
+ },
+ "6311": {
+  "i": "Taxe calculée sur les rémunérations, due au fisc par certains employeurs, notamment ceux qui ne sont pas soumis à la TVA.",
+  "k": [
+   "masse salariale",
+   "employeur non assujetti",
+   "impôt sur rémunérations"
+  ],
+  "nc": [
+   [
+    "645",
+    "cotisations sociales patronales"
+   ],
+   [
+    "6451",
+    "cotisations à la sécurité sociale"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6312": {
+  "i": "Taxe d'apprentissage versée à l'administration fiscale, assise sur les salaires.",
+  "k": [
+   "apprenti",
+   "masse salariale",
+   "école",
+   "cfa"
+  ],
+  "nc": [
+   [
+    "6335",
+    "versements libératoires à des écoles, hors fisc"
+   ],
+   [
+    "6313",
+    "cotisation formation continue"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6313": {
+  "i": "La cotisation obligatoire à la formation professionnelle, quand elle est versée à l'administration fiscale. Les formations elles-mêmes vont en 6228, les séminaires en 6185.",
+  "k": [
+   "formation continue",
+   "cotisation formation",
+   "formation professionnelle obligatoire",
+   "masse salariale"
+  ],
+  "nc": [
+   [
+    "6333",
+    "même cotisation, versée à un autre organisme collecteur"
+   ],
+   [
+    "6228",
+    "formations suivies par le personnel"
+   ],
+   [
+    "6185",
+    "colloques et séminaires"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6314": {
+  "i": "Cotisation due au fisc quand l'employeur n'a pas suffisamment investi dans l'effort de construction.",
+  "k": [
+   "effort de construction",
+   "défaut d'investissement",
+   "logement",
+   "peec"
+  ],
+  "nc": [
+   [
+    "6334",
+    "participation à l'effort de construction versée à l'organisme collecteur"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6318": {
+  "i": "Autres impôts et taxes assis sur les rémunérations et dus au fisc, sans compte dédié.",
+  "k": [
+   "taxe sur rémunérations",
+   "masse salariale",
+   "autre taxe salaires"
+  ],
+  "rel": [
+   "447",
+   "631"
+  ]
+ },
+ "633": {
+  "i": "Impôts et taxes assis sur les salaires mais versés à d'autres organismes que le fisc : formation professionnelle, effort de construction, versement transport.",
+  "k": [
+   "taxe sur salaires",
+   "organisme collecteur",
+   "masse salariale",
+   "fiaf",
+   "cafat"
+  ],
+  "nc": [
+   [
+    "631",
+    "mêmes taxes quand elles sont versées au fisc"
+   ],
+   [
+    "645",
+    "cotisations sociales"
+   ]
+  ],
+  "rel": [
+   "6333",
+   "437"
+  ]
+ },
+ "6331": {
+  "i": "Contribution versée à l'organisme de transports en commun, assise sur les salaires, pour les employeurs qui y sont soumis.",
+  "k": [
+   "versement mobilité",
+   "transports en commun",
+   "masse salariale"
+  ],
+  "nc": [
+   [
+    "6247",
+    "transport collectif du personnel que vous payez vous-même"
+   ]
+  ],
+  "rel": [
+   "437"
+  ]
+ },
+ "6332": {
+  "i": "Contribution employeur au fonds d'aide au logement, assise sur les salaires.",
+  "k": [
+   "fnal",
+   "fonds logement",
+   "contribution logement",
+   "masse salariale"
+  ],
+  "nc": [
+   [
+    "6334",
+    "participation à l'effort de construction"
+   ]
+  ],
+  "rel": [
+   "437"
+  ]
+ },
+ "6333": {
+  "i": "La cotisation obligatoire à la formation professionnelle, quand elle est collectée par un organisme autre que le fisc, comme un fonds de formation. Les formations suivies vont en 6228, les séminaires en 6185.",
+  "k": [
+   "formation continue",
+   "cotisation formation",
+   "fiaf",
+   "cafat",
+   "opco",
+   "masse salariale"
+  ],
+  "nc": [
+   [
+    "6313",
+    "même cotisation, versée à l'administration fiscale"
+   ],
+   [
+    "6228",
+    "formations suivies par le personnel"
+   ],
+   [
+    "6185",
+    "colloques et séminaires"
+   ]
+  ],
+  "rel": [
+   "437"
+  ]
+ },
+ "6334": {
+  "i": "Participation des employeurs à l'effort de construction versée à l'organisme collecteur, assise sur les salaires.",
+  "k": [
+   "action logement",
+   "peec",
+   "logement",
+   "masse salariale"
+  ],
+  "nc": [
+   [
+    "6314",
+    "cotisation au fisc pour défaut d'investissement"
+   ],
+   [
+    "6332",
+    "allocations logement"
+   ]
+  ],
+  "rel": [
+   "437"
+  ]
+ },
+ "6335": {
+  "i": "Versements faits directement à des écoles ou centres de formation d'apprentis, qui viennent en déduction de la taxe d'apprentissage.",
+  "k": [
+   "apprentissage",
+   "cfa",
+   "école",
+   "versement école"
+  ],
+  "nc": [
+   [
+    "6312",
+    "taxe d'apprentissage versée au fisc"
+   ],
+   [
+    "6713",
+    "don à une école sans lien avec la taxe"
+   ]
+  ],
+  "rel": [
+   "6312"
+  ]
+ },
+ "6338": {
+  "i": "Autres taxes assises sur les rémunérations et versées à des organismes autres que le fisc, sans compte dédié.",
+  "k": [
+   "autre taxe salaires",
+   "masse salariale",
+   "organisme collecteur"
+  ],
+  "rel": [
+   "437",
+   "633"
   ]
  },
  "635": {
@@ -8218,6 +13261,55 @@
    ]
   ]
  },
+ "6351": {
+  "i": "Impôts directs autres que l'impôt sur les bénéfices : contribution économique territoriale ou patente, taxes foncières, autres impôts locaux, taxe sur les véhicules.",
+  "k": [
+   "patente",
+   "cfe",
+   "impôt local",
+   "taxe foncière",
+   "tvs"
+  ],
+  "nc": [
+   [
+    "695",
+    "impôt sur les bénéfices"
+   ],
+   [
+    "6354",
+    "droits d'enregistrement"
+   ]
+  ],
+  "rel": [
+   "63511",
+   "63512",
+   "63514",
+   "447"
+  ]
+ },
+ "63511": {
+  "i": "L'impôt local dû pour l'exercice d'une activité : contribution économique territoriale, ou la patente et ses centimes additionnels.",
+  "k": [
+   "patente",
+   "cfe",
+   "cvae",
+   "centimes additionnels",
+   "contribution des patentes"
+  ],
+  "nc": [
+   [
+    "63512",
+    "taxe foncière sur vos immeubles"
+   ],
+   [
+    "63513",
+    "autres impôts locaux"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
  "63512": {
   "i": "Taxe foncière sur les immeubles dont vous êtes propriétaire.",
   "k": [
@@ -8229,6 +13321,288 @@
     "614",
     "taxe refacturée par le bailleur si vous êtes locataire"
    ]
+  ]
+ },
+ "63513": {
+  "i": "Les autres impôts locaux : taxes communales ou provinciales, taxe d'enlèvement des ordures, taxe sur les enseignes, contributions locales diverses.",
+  "k": [
+   "taxe communale",
+   "province",
+   "ordures ménagères",
+   "enseigne",
+   "centimes additionnels",
+   "taxe locale"
+  ],
+  "nc": [
+   [
+    "63511",
+    "patente ou CET"
+   ],
+   [
+    "63512",
+    "taxe foncière"
+   ],
+   [
+    "614",
+    "taxes refacturées par le bailleur"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "63514": {
+  "i": "Taxe annuelle sur les véhicules de tourisme possédés ou loués par la société.",
+  "k": [
+   "tvs",
+   "véhicule de société",
+   "voiture de fonction",
+   "taxe véhicule"
+  ],
+  "nc": [
+   [
+    "6161",
+    "assurance du véhicule"
+   ],
+   [
+    "2182",
+    "achat du véhicule"
+   ]
+  ],
+  "rel": [
+   "2182",
+   "447"
+  ]
+ },
+ "6352": {
+  "i": "TVA ou TGC que vous ne pouvez pas récupérer et qui devient une charge : sur véhicules de tourisme, cadeaux, ou pour une activité non assujettie.",
+  "k": [
+   "tva non récupérable",
+   "tva non déductible",
+   "tgc non déductible",
+   "tgc non récupérable",
+   "non assujetti"
+  ],
+  "nc": [
+   [
+    "4456",
+    "TVA ou TGC récupérable"
+   ],
+   [
+    "6353",
+    "impôts indirects sur des produits"
+   ]
+  ],
+  "rel": [
+   "4455"
+  ]
+ },
+ "6353": {
+  "i": "Impôts indirects supportés par l'entreprise : accises, droits sur les alcools, tabacs et carburants, taxes à l'importation non incorporées au coût d'achat.",
+  "k": [
+   "accises",
+   "alcool",
+   "tabac",
+   "carburant",
+   "douane",
+   "taxe à l'import"
+  ],
+  "nc": [
+   [
+    "608",
+    "droits de douane incorporés au coût d'achat"
+   ],
+   [
+    "6352",
+    "TVA ou TGC non récupérable"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6354": {
+  "i": "Droits payés à l'administration pour enregistrer un acte : bail, cession de parts, timbres fiscaux, droits sur actes.",
+  "k": [
+   "timbre fiscal",
+   "cession de parts",
+   "bail enregistré",
+   "acte",
+   "mutation"
+  ],
+  "nc": [
+   [
+    "6227",
+    "frais de greffe, d'huissier et de contentieux"
+   ],
+   [
+    "6226",
+    "honoraires du notaire"
+   ]
+  ],
+  "rel": [
+   "63541",
+   "447"
+  ]
+ },
+ "63541": {
+  "i": "Droits de mutation payés lors de l'achat d'un immeuble, d'un fonds de commerce ou de titres, quand vous choisissez de ne pas les incorporer au coût de l'immobilisation.",
+  "k": [
+   "frais de notaire",
+   "achat immeuble",
+   "cession de fonds",
+   "acquisition",
+   "droits d'acquisition"
+  ],
+  "nc": [
+   [
+    "2131",
+    "si les droits sont incorporés au coût de l'immeuble"
+   ],
+   [
+    "6226",
+    "honoraires du notaire"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6358": {
+  "i": "Autres droits et taxes dus à l'administration fiscale qui n'entrent dans aucun des sous-comptes précédents.",
+  "k": [
+   "droit divers",
+   "taxe diverse fisc",
+   "redevance fiscale"
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "637": {
+  "i": "Impôts et taxes versés à d'autres organismes que le fisc : contribution sociale de solidarité, taxes d'organismes internationaux, impôts payés à l'étranger, taxes diverses.",
+  "k": [
+   "taxe organisme",
+   "taxe parafiscale",
+   "contribution",
+   "redevance"
+  ],
+  "nc": [
+   [
+    "635",
+    "impôts dus à l'administration fiscale"
+   ],
+   [
+    "645",
+    "cotisations sociales"
+   ]
+  ],
+  "rel": [
+   "6371",
+   "6378",
+   "447"
+  ]
+ },
+ "6371": {
+  "i": "Contribution sociale de solidarité des sociétés, assise sur le chiffre d'affaires, versée à l'organisme de recouvrement.",
+  "k": [
+   "c3s",
+   "organic",
+   "contribution sur chiffre d'affaires"
+  ],
+  "nc": [
+   [
+    "645",
+    "cotisations sociales sur les salaires"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6372": {
+  "i": "Taxes et redevances perçues par des organismes publics internationaux, très rare en pratique.",
+  "k": [
+   "organisme international",
+   "redevance internationale",
+   "taxe internationale"
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6374": {
+  "i": "Impôts et taxes payés à un État étranger, autres que l'impôt sur les bénéfices : taxes locales d'une succursale, droits étrangers.",
+  "k": [
+   "taxe étrangère",
+   "succursale",
+   "impôt étranger",
+   "international"
+  ],
+  "nc": [
+   [
+    "6954",
+    "impôt sur les bénéfices dû à l'étranger"
+   ],
+   [
+    "6353",
+    "droits de douane et accises locaux"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "6378": {
+  "i": "Taxes diverses dues à des organismes autres que le fisc, sans compte dédié : redevances d'organismes professionnels obligatoires, taxes parafiscales.",
+  "k": [
+   "taxe parafiscale",
+   "redevance obligatoire",
+   "taxe diverse",
+   "cotisation obligatoire"
+  ],
+  "nc": [
+   [
+    "6281",
+    "cotisation volontaire à un organisme professionnel"
+   ],
+   [
+    "6358",
+    "autres droits dus au fisc"
+   ]
+  ],
+  "rel": [
+   "447"
+  ]
+ },
+ "64": {
+  "i": "Tout ce que vous coûte votre personnel : salaires bruts, primes, congés, cotisations patronales, œuvres sociales, médecine du travail.",
+  "k": [
+   "masse salariale",
+   "paie",
+   "salaires",
+   "cotisations",
+   "cafat"
+  ],
+  "nc": [
+   [
+    "621",
+    "intérimaires et personnel extérieur"
+   ],
+   [
+    "631",
+    "taxes assises sur les salaires"
+   ],
+   [
+    "644",
+    "rémunération de l'exploitant"
+   ]
+  ],
+  "rel": [
+   "641",
+   "645",
+   "647",
+   "648"
   ]
  },
  "641": {
@@ -8278,6 +13652,121 @@
    ]
   ]
  },
+ "6412": {
+  "i": "Indemnités de congés payés versées aux salariés. À la clôture, la charge des congés acquis et non pris s'y ajoute par une provision, contrepassée à l'ouverture.",
+  "k": [
+   "indemnité congés",
+   "provision congés payés",
+   "congés acquis",
+   "clôture",
+   "cp"
+  ],
+  "nc": [
+   [
+    "428",
+    "la dette pour congés à payer au bilan"
+   ],
+   [
+    "6411",
+    "le salaire de base"
+   ]
+  ],
+  "rel": [
+   "4282",
+   "4382",
+   "4482"
+  ]
+ },
+ "6413": {
+  "i": "Primes et gratifications versées au personnel : prime de fin d'année, treizième mois, bonus, prime exceptionnelle.",
+  "k": [
+   "prime",
+   "bonus",
+   "treizième mois",
+   "gratification",
+   "prime exceptionnelle"
+  ],
+  "nc": [
+   [
+    "6411",
+    "salaire de base"
+   ],
+   [
+    "691",
+    "participation des salariés aux résultats"
+   ]
+  ],
+  "rel": [
+   "4286"
+  ]
+ },
+ "6414": {
+  "i": "Indemnités et avantages versés avec la paie : avantages en nature, indemnités de transport ou de repas, prime de panier, indemnités forfaitaires.",
+  "k": [
+   "avantage en nature",
+   "indemnité de repas",
+   "panier",
+   "indemnité de transport",
+   "logement de fonction",
+   "voiture de fonction"
+  ],
+  "nc": [
+   [
+    "6251",
+    "frais de déplacement remboursés sur justificatif"
+   ],
+   [
+    "648",
+    "indemnités de rupture"
+   ],
+   [
+    "6247",
+    "transport collectif organisé par l'entreprise"
+   ]
+  ]
+ },
+ "6415": {
+  "i": "Supplément versé avec le salaire en fonction des charges de famille, quand le statut ou la convention le prévoit, surtout dans le secteur public.",
+  "k": [
+   "charges de famille",
+   "enfants à charge",
+   "sft",
+   "complément familial"
+  ],
+  "nc": [
+   [
+    "6414",
+    "autres indemnités et avantages"
+   ]
+  ]
+ },
+ "644": {
+  "i": "Entreprise individuelle : la rémunération que l'exploitant s'attribue pour son travail, si vous choisissez de la faire apparaître en charge plutôt qu'en prélèvement.",
+  "k": [
+   "exploitant",
+   "entrepreneur individuel",
+   "rémunération du chef d'entreprise",
+   "prélèvement"
+  ],
+  "nc": [
+   [
+    "108",
+    "prélèvements de l'exploitant, sans passer par une charge"
+   ],
+   [
+    "641",
+    "salaires du personnel"
+   ],
+   [
+    "646",
+    "ses cotisations sociales personnelles"
+   ]
+  ],
+  "rel": [
+   "108",
+   "646"
+  ]
+ },
  "645": {
   "i": "Les cotisations patronales de sécurité sociale, retraite, prévoyance et chômage.",
   "k": [
@@ -8304,6 +13793,150 @@
    "437"
   ]
  },
+ "6451": {
+  "i": "Cotisations patronales dues à l'organisme de sécurité sociale : maladie, retraite de base, accidents du travail, prestations familiales.",
+  "k": [
+   "cafat",
+   "urssaf",
+   "sécurité sociale",
+   "cotisations patronales",
+   "charges patronales",
+   "accident du travail"
+  ],
+  "nc": [
+   [
+    "6453",
+    "retraite complémentaire"
+   ],
+   [
+    "6454",
+    "assurance chômage"
+   ],
+   [
+    "431",
+    "la dette envers l'organisme, au bilan"
+   ]
+  ],
+  "rel": [
+   "431"
+  ]
+ },
+ "6452": {
+  "i": "Part employeur des cotisations à la complémentaire santé des salariés, versée à la mutuelle ou à l'assureur.",
+  "k": [
+   "complémentaire santé",
+   "frais de santé",
+   "part patronale",
+   "assurance santé salariés"
+  ],
+  "nc": [
+   [
+    "616",
+    "assurances de l'entreprise elle-même"
+   ],
+   [
+    "6458",
+    "prévoyance"
+   ]
+  ],
+  "rel": [
+   "437"
+  ]
+ },
+ "6453": {
+  "i": "Part employeur des cotisations de retraite complémentaire des salariés, versée aux caisses de retraite.",
+  "k": [
+   "retraite complémentaire",
+   "agirc-arrco",
+   "cre",
+   "ircafex",
+   "part patronale retraite"
+  ],
+  "nc": [
+   [
+    "6451",
+    "retraite de base, incluse dans la sécurité sociale"
+   ],
+   [
+    "6458",
+    "prévoyance"
+   ]
+  ],
+  "rel": [
+   "437"
+  ]
+ },
+ "6454": {
+  "i": "Part employeur des cotisations d'assurance chômage des salariés, versée à l'organisme qui gère ce régime.",
+  "k": [
+   "chômage",
+   "assurance chômage",
+   "unedic",
+   "pôle emploi",
+   "cafat chômage"
+  ],
+  "nc": [
+   [
+    "6451",
+    "cotisations de sécurité sociale"
+   ]
+  ],
+  "rel": [
+   "437",
+   "431"
+  ]
+ },
+ "6458": {
+  "i": "Cotisations patronales aux autres organismes sociaux : prévoyance, caisses de congés payés, fonds divers.",
+  "k": [
+   "prévoyance",
+   "caisse de congés payés",
+   "organisme social",
+   "fonds social"
+  ],
+  "nc": [
+   [
+    "6452",
+    "complémentaire santé"
+   ],
+   [
+    "6453",
+    "retraite complémentaire"
+   ]
+  ],
+  "rel": [
+   "437"
+  ]
+ },
+ "646": {
+  "i": "Cotisations sociales personnelles de l'exploitant ou du gérant majoritaire : maladie, retraite, allocations familiales du travailleur indépendant.",
+  "k": [
+   "ruamm",
+   "tns",
+   "travailleur indépendant",
+   "gérant majoritaire",
+   "cotisations gérant",
+   "cafat"
+  ],
+  "nc": [
+   [
+    "645",
+    "cotisations patronales sur les salaires"
+   ],
+   [
+    "644",
+    "la rémunération de l'exploitant"
+   ],
+   [
+    "108",
+    "prélèvements personnels"
+   ]
+  ],
+  "rel": [
+   "431",
+   "437"
+  ]
+ },
  "647": {
   "i": "Autres charges sociales : œuvres sociales, médecine du travail, versements au comité social.",
   "k": [
@@ -8321,6 +13954,113 @@
    ]
   ]
  },
+ "6471": {
+  "i": "Prestations sociales versées directement par l'entreprise à ses salariés : complément d'indemnités journalières, secours, allocations diverses.",
+  "k": [
+   "secours",
+   "allocation",
+   "complément indemnités journalières",
+   "maintien de salaire",
+   "aide au salarié"
+  ],
+  "nc": [
+   [
+    "641",
+    "salaire"
+   ],
+   [
+    "6474",
+    "œuvres sociales collectives"
+   ]
+  ]
+ },
+ "6472": {
+  "i": "Subvention versée au comité d'entreprise ou au comité social : budget de fonctionnement et budget des œuvres sociales.",
+  "k": [
+   "cse",
+   "comité d'entreprise",
+   "budget cse",
+   "subvention comité",
+   "activités sociales"
+  ],
+  "nc": [
+   [
+    "6474",
+    "œuvres sociales gérées directement par l'entreprise"
+   ]
+  ],
+  "rel": [
+   "422"
+  ]
+ },
+ "6473": {
+  "i": "Versements au comité d'hygiène et de sécurité, quand il dispose d'un budget propre. Rare aujourd'hui.",
+  "k": [
+   "chsct",
+   "hygiène",
+   "sécurité",
+   "comité sécurité"
+  ],
+  "nc": [
+   [
+    "6475",
+    "médecine du travail"
+   ],
+   [
+    "6472",
+    "comité d'entreprise ou social"
+   ]
+  ],
+  "rel": [
+   "422"
+  ]
+ },
+ "6474": {
+  "i": "Œuvres sociales gérées directement par l'entreprise : cadeaux et arbre de Noël du personnel, chèques cadeaux, cantine subventionnée, sorties.",
+  "k": [
+   "cadeau personnel",
+   "noël",
+   "chèque cadeau",
+   "cantine",
+   "arbre de noël",
+   "sortie du personnel",
+   "bons d'achat"
+  ],
+  "nc": [
+   [
+    "6234",
+    "cadeaux aux clients"
+   ],
+   [
+    "648",
+    "titres-restaurant"
+   ],
+   [
+    "6472",
+    "subvention au comité social"
+   ]
+  ]
+ },
+ "6475": {
+  "i": "Médecine du travail : cotisation au service interentreprises, visites médicales, pharmacie et trousse de secours de l'entreprise.",
+  "k": [
+   "smit",
+   "visite médicale",
+   "pharmacie",
+   "trousse de secours",
+   "service de santé au travail"
+  ],
+  "nc": [
+   [
+    "6452",
+    "complémentaire santé"
+   ],
+   [
+    "6473",
+    "comité d'hygiène et de sécurité"
+   ]
+  ]
+ },
  "648": {
   "i": "Autres charges de personnel : titres-restaurant, indemnités de rupture, frais divers liés aux salariés.",
   "k": [
@@ -8334,6 +14074,30 @@
     "647",
     "œuvres sociales"
    ]
+  ]
+ },
+ "65": {
+  "i": "Charges de gestion courante qui ne sont ni des achats, ni des services, ni du personnel : redevances, jetons de présence, créances irrécouvrables, pertes de change commerciales.",
+  "k": [
+   "redevance",
+   "créance perdue",
+   "charge diverse",
+   "jetons"
+  ],
+  "nc": [
+   [
+    "67",
+    "charges exceptionnelles"
+   ],
+   [
+    "66",
+    "charges financières"
+   ]
+  ],
+  "rel": [
+   "651",
+   "654",
+   "658"
   ]
  },
  "651": {
@@ -8356,6 +14120,95 @@
     "6156",
     "contrat de maintenance"
    ]
+  ]
+ },
+ "6511": {
+  "i": "Redevances et abonnements pour utiliser un brevet, une licence, une marque ou un logiciel : abonnements logiciels, franchise, licence d'exploitation.",
+  "k": [
+   "abonnement logiciel",
+   "saas",
+   "licence",
+   "franchise",
+   "redevance de marque",
+   "cloud"
+  ],
+  "nc": [
+   [
+    "205",
+    "logiciel acheté et immobilisé"
+   ],
+   [
+    "6156",
+    "contrat de maintenance"
+   ],
+   [
+    "6516",
+    "droits d'auteur"
+   ]
+  ]
+ },
+ "6516": {
+  "i": "Droits d'auteur et de reproduction : diffusion de musique, reprographie, droits sur photos ou textes utilisés.",
+  "k": [
+   "sacem",
+   "musique",
+   "reprographie",
+   "droits photo",
+   "cfc",
+   "diffusion"
+  ],
+  "nc": [
+   [
+    "6511",
+    "licence ou abonnement logiciel"
+   ],
+   [
+    "6231",
+    "achat d'espace publicitaire"
+   ]
+  ]
+ },
+ "6518": {
+  "i": "Autres redevances pour des droits d'usage sans compte dédié : droits d'exploitation, redevances diverses.",
+  "k": [
+   "redevance diverse",
+   "droit d'usage",
+   "droit d'exploitation"
+  ],
+  "nc": [
+   [
+    "6511",
+    "brevets, licences, marques, logiciels"
+   ],
+   [
+    "6516",
+    "droits d'auteur"
+   ]
+  ],
+  "rel": [
+   "651"
+  ]
+ },
+ "653": {
+  "i": "Sommes versées aux administrateurs ou membres du conseil de surveillance pour leur participation aux séances.",
+  "k": [
+   "administrateur",
+   "conseil d'administration",
+   "conseil de surveillance",
+   "rémunération administrateur"
+  ],
+  "nc": [
+   [
+    "641",
+    "salaire d'un dirigeant salarié"
+   ],
+   [
+    "6226",
+    "honoraires d'un conseil"
+   ]
+  ],
+  "rel": [
+   "467"
   ]
  },
  "654": {
@@ -8382,6 +14235,148 @@
    "78174"
   ]
  },
+ "6541": {
+  "i": "Créances clients nées dans l'exercice et déjà perdues à la clôture : client disparu, liquidation clôturée dans l'année.",
+  "k": [
+   "impayé",
+   "créance perdue",
+   "liquidation",
+   "client disparu"
+  ],
+  "nc": [
+   [
+    "6544",
+    "créance née sur un exercice antérieur"
+   ],
+   [
+    "491",
+    "perte seulement probable"
+   ]
+  ],
+  "rel": [
+   "411",
+   "416"
+  ]
+ },
+ "6544": {
+  "i": "Créances des exercices antérieurs devenues irrécouvrables. Si elles avaient été dépréciées, on reprend la dépréciation en 78174.",
+  "k": [
+   "impayé ancien",
+   "créance perdue",
+   "liquidation",
+   "reprise dépréciation"
+  ],
+  "nc": [
+   [
+    "6541",
+    "créance née dans l'exercice"
+   ],
+   [
+    "6714",
+    "perte exceptionnelle sur créance"
+   ]
+  ],
+  "rel": [
+   "416",
+   "491",
+   "78174"
+  ]
+ },
+ "655": {
+  "i": "Part du résultat d'une société en participation ou d'un GIE que vous supportez ou transférez à vos coassociés.",
+  "k": [
+   "société en participation",
+   "gie",
+   "quote-part",
+   "sep",
+   "opération en commun"
+  ],
+  "nc": [
+   [
+    "755",
+    "les quotes-parts qui vous reviennent"
+   ]
+  ],
+  "rel": [
+   "6551",
+   "6555",
+   "458"
+  ]
+ },
+ "6551": {
+  "i": "Gérant d'une société en participation : la part du bénéfice que vous reversez aux autres associés.",
+  "k": [
+   "gérant",
+   "société en participation",
+   "bénéfice transféré",
+   "sep"
+  ],
+  "nc": [
+   [
+    "7551",
+    "part de perte que vous transférez aux associés"
+   ],
+   [
+    "6555",
+    "votre part de perte si vous n'êtes pas gérant"
+   ]
+  ],
+  "rel": [
+   "458"
+  ]
+ },
+ "6555": {
+  "i": "Associé non gérant d'une société en participation : la part de perte qui vous est attribuée.",
+  "k": [
+   "société en participation",
+   "perte supportée",
+   "associé",
+   "sep"
+  ],
+  "nc": [
+   [
+    "7555",
+    "part de bénéfice qui vous est attribuée"
+   ],
+   [
+    "6551",
+    "bénéfice transféré par le gérant"
+   ]
+  ],
+  "rel": [
+   "458"
+  ]
+ },
+ "656": {
+  "i": "Perte de change réalisée sur une facture client ou fournisseur en devises, entre la comptabilisation et le règlement.",
+  "k": [
+   "perte de change",
+   "devise",
+   "fournisseur étranger",
+   "client étranger",
+   "taux de change",
+   "dollar",
+   "euro"
+  ],
+  "nc": [
+   [
+    "666",
+    "perte de change sur emprunt ou placement"
+   ],
+   [
+    "476",
+    "perte latente à la clôture, non encore réalisée"
+   ],
+   [
+    "6865",
+    "provision pour cette perte latente"
+   ]
+  ],
+  "rel": [
+   "401",
+   "411"
+  ]
+ },
  "658": {
   "i": "Charges de gestion courante qui n'ont pas de compte dédié : petits écarts, arrondis, charges diverses.",
   "k": [
@@ -8394,6 +14389,31 @@
     "6788",
     "charge vraiment exceptionnelle"
    ]
+  ]
+ },
+ "66": {
+  "i": "Coût de l'argent et des placements : intérêts, escomptes accordés, pertes de change financières, moins-values sur titres de placement, dotations financières.",
+  "k": [
+   "intérêts",
+   "agios",
+   "financier",
+   "coût de la dette"
+  ],
+  "nc": [
+   [
+    "627",
+    "services bancaires, qui sont des services extérieurs"
+   ],
+   [
+    "65",
+    "charges de gestion courante"
+   ]
+  ],
+  "rel": [
+   "661",
+   "665",
+   "666",
+   "686"
   ]
  },
  "661": {
@@ -8419,6 +14439,136 @@
    "6616"
   ]
  },
+ "6611": {
+  "i": "Intérêts de vos emprunts et dettes. À la clôture, rattachez la part courue et non échue par le 1688 (16884 pour les emprunts bancaires), contrepassée à l'ouverture.",
+  "k": [
+   "intérêts d'emprunt",
+   "échéance",
+   "tableau d'amortissement",
+   "intérêts courus",
+   "ICNE",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "164",
+    "le capital remboursé à chaque échéance"
+   ],
+   [
+    "6616",
+    "agios de découvert et intérêts bancaires courants"
+   ],
+   [
+    "6272",
+    "frais de mise en place de l'emprunt"
+   ]
+  ],
+  "rel": [
+   "164",
+   "16884",
+   "1688",
+   "66116"
+  ]
+ },
+ "66116": {
+  "i": "Intérêts des emprunts bancaires et des autres emprunts et dettes assimilées. À la clôture, la part courue non échue va en 16884 (banques) ou 16888 (autres) ; pour un découvert, elle va en 5198 avec le 6616.",
+  "k": [
+   "intérêts d'emprunt",
+   "prêt bancaire",
+   "intérêts courus",
+   "ICNE",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "66117",
+    "intérêts dus à une société liée par une participation"
+   ],
+   [
+    "6615",
+    "intérêts d'un compte courant d'associé"
+   ],
+   [
+    "6616",
+    "agios de découvert, intérêts courus en 5198 ou 5181"
+   ]
+  ],
+  "rel": [
+   "164",
+   "16884",
+   "168",
+   "16888"
+  ]
+ },
+ "66117": {
+  "i": "Intérêts dus sur les dettes envers des sociétés qui détiennent une participation dans la vôtre, ou dans lesquelles vous en détenez une : avances de la maison mère.",
+  "k": [
+   "groupe",
+   "maison mère",
+   "avance de trésorerie groupe",
+   "intérêts intragroupe",
+   "filiale"
+  ],
+  "nc": [
+   [
+    "6615",
+    "intérêts d'un compte courant d'associé personne physique"
+   ],
+   [
+    "66116",
+    "intérêts d'un emprunt bancaire"
+   ]
+  ],
+  "rel": [
+   "171",
+   "174",
+   "451"
+  ]
+ },
+ "6612": {
+  "i": "Charges de la fiducie constatées dans les comptes du constituant pour la période. Opération rare, à voir avec le cabinet.",
+  "k": [
+   "fiduciaire",
+   "constituant",
+   "patrimoine fiduciaire"
+  ],
+  "nc": [
+   [
+    "674",
+    "constitution ou liquidation de la fiducie"
+   ]
+  ],
+  "rel": [
+   "7612"
+  ]
+ },
+ "6615": {
+  "i": "Intérêts que vous versez sur les comptes courants d'associés et sur les dépôts reçus. À la clôture, les intérêts courus vont en 4558 pour les associés, 16885 pour les dépôts et cautionnements.",
+  "k": [
+   "intérêts compte courant",
+   "CCA",
+   "rémunération compte courant",
+   "intérêts courus",
+   "ICNE",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "457",
+    "dividendes versés aux associés"
+   ],
+   [
+    "6611",
+    "intérêts d'un emprunt"
+   ]
+  ],
+  "rel": [
+   "455",
+   "4558",
+   "165",
+   "16885"
+  ]
+ },
  "6616": {
   "i": "Agios, intérêts de découvert, commissions d'escompte et autres intérêts bancaires.",
   "k": [
@@ -8432,6 +14582,126 @@
     "6278",
     "frais et commissions de service"
    ]
+  ]
+ },
+ "6617": {
+  "i": "Intérêts dus sur les obligations cautionnées : crédit accordé par l'administration pour payer des droits ou taxes à terme, garanti par une caution bancaire.",
+  "k": [
+   "obligation cautionnée",
+   "douane",
+   "crédit de droits",
+   "caution bancaire"
+  ],
+  "nc": [
+   [
+    "6616",
+    "intérêts bancaires"
+   ],
+   [
+    "6353",
+    "les droits eux-mêmes"
+   ]
+  ],
+  "rel": [
+   "446"
+  ]
+ },
+ "6618": {
+  "i": "Intérêts sur les autres dettes : intérêts de retard facturés par un fournisseur, intérêts sur dettes diverses.",
+  "k": [
+   "intérêts de retard",
+   "intérêts moratoires",
+   "dette diverse",
+   "fournisseur"
+  ],
+  "nc": [
+   [
+    "6712",
+    "majorations et pénalités fiscales ou sociales"
+   ],
+   [
+    "6611",
+    "intérêts d'emprunt"
+   ]
+  ],
+  "rel": [
+   "66181",
+   "66188"
+  ]
+ },
+ "66181": {
+  "i": "Intérêts facturés par un fournisseur pour un paiement différé ou en retard. À la clôture, les intérêts courus non facturés vont en 4088.",
+  "k": [
+   "intérêts de retard fournisseur",
+   "paiement différé",
+   "intérêts courus",
+   "ICNE",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6712",
+    "pénalités de retard forfaitaires"
+   ],
+   [
+    "665",
+    "escompte accordé à un client"
+   ]
+  ],
+  "rel": [
+   "401",
+   "4088"
+  ]
+ },
+ "66188": {
+  "i": "Intérêts sur vos dettes diverses, hors emprunts et fournisseurs : dette envers un tiers, un organisme, un créancier divers. À la clôture, la part courue passe en charges à payer.",
+  "k": [
+   "intérêts dette diverse",
+   "créditeur divers",
+   "intérêts courus",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "66181",
+    "intérêts dus à un fournisseur"
+   ],
+   [
+    "6615",
+    "intérêts d'un compte courant d'associé"
+   ]
+  ],
+  "rel": [
+   "467",
+   "4686"
+  ]
+ },
+ "664": {
+  "i": "Perte définitive sur un prêt ou une avance consentie à une filiale ou à une société dans laquelle vous avez une participation.",
+  "k": [
+   "filiale",
+   "avance groupe",
+   "prêt à une filiale",
+   "abandon de créance",
+   "créance perdue"
+  ],
+  "nc": [
+   [
+    "654",
+    "créance commerciale perdue"
+   ],
+   [
+    "2967",
+    "perte seulement probable, dépréciée"
+   ],
+   [
+    "6756",
+    "valeur des titres eux-mêmes lors d'une cession"
+   ]
+  ],
+  "rel": [
+   "267",
+   "2671"
   ]
  },
  "665": {
@@ -8461,6 +14731,79 @@
    ]
   ]
  },
+ "667": {
+  "i": "Moins-value sur la vente de titres de placement : le prix de cession est inférieur au coût d'achat. Le solde net de l'exercice figure ici s'il est perdant, en 767 s'il est gagnant.",
+  "k": [
+   "moins-value",
+   "vente de titres",
+   "sicav",
+   "cession vmp",
+   "placement"
+  ],
+  "nc": [
+   [
+    "767",
+    "le résultat net de cession est positif"
+   ],
+   [
+    "6756",
+    "cession de titres immobilisés ou de participation"
+   ]
+  ],
+  "rel": [
+   "503",
+   "465",
+   "767"
+  ]
+ },
+ "668": {
+  "i": "Autres charges financières : indemnité de remboursement anticipé d'un emprunt, pertes sur instruments financiers, charges financières sans compte dédié.",
+  "k": [
+   "ira",
+   "remboursement anticipé",
+   "indemnité de remboursement anticipé",
+   "charge financière diverse",
+   "swap"
+  ],
+  "nc": [
+   [
+    "6278",
+    "frais bancaires, qui sont des services"
+   ],
+   [
+    "661",
+    "intérêts courants"
+   ]
+  ],
+  "rel": [
+   "164"
+  ]
+ },
+ "67": {
+  "i": "Charges hors activité courante : pénalités, amendes, dons, valeur comptable des immobilisations cédées, dotations exceptionnelles.",
+  "k": [
+   "exceptionnel",
+   "hors exploitation",
+   "pénalité",
+   "cession"
+  ],
+  "nc": [
+   [
+    "65",
+    "charges de gestion courante"
+   ],
+   [
+    "66",
+    "charges financières"
+   ]
+  ],
+  "rel": [
+   "671",
+   "675",
+   "678",
+   "687"
+  ]
+ },
  "671": {
   "i": "Charges exceptionnelles liées à la gestion : pénalités, amendes, dons, créances irrécouvrables exceptionnelles.",
   "k": [
@@ -8472,6 +14815,29 @@
   "rel": [
    "6712",
    "6713"
+  ]
+ },
+ "6711": {
+  "i": "Pénalités contractuelles et dédits que vous payez à un client ou un fournisseur : retard de livraison, annulation d'une commande, non-respect d'un marché.",
+  "k": [
+   "pénalité de retard",
+   "dédit",
+   "annulation de commande",
+   "pénalité contractuelle",
+   "marché public"
+  ],
+  "nc": [
+   [
+    "6712",
+    "amendes et pénalités fiscales ou pénales"
+   ],
+   [
+    "709",
+    "remise commerciale accordée"
+   ]
+  ],
+  "rel": [
+   "7711"
   ]
  },
  "6712": {
@@ -8514,6 +14880,179 @@
    ]
   ]
  },
+ "6714": {
+  "i": "Créance perdue dans l'exercice hors du circuit commercial habituel, ou d'un montant inhabituel : créance sur un tiers divers, créance oubliée.",
+  "k": [
+   "créance perdue",
+   "irrécouvrable",
+   "perte exceptionnelle",
+   "tiers divers"
+  ],
+  "nc": [
+   [
+    "654",
+    "impayé client courant, en gestion courante"
+   ],
+   [
+    "664",
+    "créance sur une filiale"
+   ]
+  ],
+  "rel": [
+   "467",
+   "416"
+  ]
+ },
+ "6715": {
+  "i": "Subventions que vous versez à une autre entité, à fonds perdus : filiale, association, organisme.",
+  "k": [
+   "subvention versée",
+   "aide accordée",
+   "filiale",
+   "association",
+   "abandon"
+  ],
+  "nc": [
+   [
+    "6713",
+    "dons et mécénat"
+   ],
+   [
+    "664",
+    "abandon de créance envers une participation"
+   ]
+  ]
+ },
+ "6717": {
+  "i": "Rappels d'impôts et taxes autres que l'impôt sur les bénéfices, après contrôle ou régularisation : TVA ou TGC, patente, taxe foncière d'un exercice passé.",
+  "k": [
+   "redressement",
+   "contrôle fiscal",
+   "rappel de tgc",
+   "rappel de tva",
+   "régularisation d'impôt",
+   "proposition de rectification"
+  ],
+  "nc": [
+   [
+    "6712",
+    "majorations, intérêts de retard et pénalités"
+   ],
+   [
+    "6951",
+    "rappel d'impôt sur les bénéfices"
+   ],
+   [
+    "7717",
+    "dégrèvement obtenu, le miroir"
+   ]
+  ],
+  "rel": [
+   "447",
+   "4455"
+  ]
+ },
+ "6718": {
+  "i": "Autres charges exceptionnelles de gestion sans compte dédié : indemnité versée suite à un litige, charge d'un sinistre non couvert, régularisation ancienne.",
+  "k": [
+   "litige",
+   "indemnité versée",
+   "sinistre",
+   "transaction",
+   "régularisation"
+  ],
+  "nc": [
+   [
+    "6788",
+    "charges exceptionnelles diverses hors gestion"
+   ],
+   [
+    "658",
+    "charge courante de faible importance"
+   ]
+  ],
+  "rel": [
+   "671"
+  ]
+ },
+ "672": {
+  "i": "Compte de passage pour une charge qui concerne un exercice déjà clos, découverte en cours d'année. Avant la clôture, reclassez-la dans le compte de charge par nature.",
+  "k": [
+   "exercice antérieur",
+   "charge oubliée",
+   "régularisation",
+   "erreur",
+   "reclassement"
+  ],
+  "nc": [
+   [
+    "6717",
+    "rappel d'impôt d'un exercice passé"
+   ],
+   [
+    "772",
+    "produit sur exercice antérieur"
+   ]
+  ],
+  "rel": [
+   "772"
+  ]
+ },
+ "674": {
+  "i": "Charges liées à la mise en place ou à la fin d'une fiducie : valeur des éléments transférés ou repris. Rare ; à voir avec le cabinet.",
+  "k": [
+   "fiduciaire",
+   "transfert en fiducie",
+   "constituant"
+  ],
+  "nc": [
+   [
+    "6612",
+    "charges de la fiducie en cours de vie"
+   ]
+  ],
+  "rel": [
+   "774",
+   "6741",
+   "6742"
+  ]
+ },
+ "6741": {
+  "i": "Valeur comptable des éléments que vous transférez au fiduciaire lors de la constitution d'une fiducie.",
+  "k": [
+   "fiduciaire",
+   "transfert d'actifs",
+   "constitution fiducie"
+  ],
+  "nc": [
+   [
+    "6742",
+    "fin de la fiducie"
+   ]
+  ],
+  "rel": [
+   "7741",
+   "2661"
+  ]
+ },
+ "6742": {
+  "i": "Charges constatées quand la fiducie prend fin et que les éléments reviennent ou sont liquidés.",
+  "k": [
+   "fiduciaire",
+   "fin de fiducie",
+   "liquidation fiducie"
+  ],
+  "nc": [
+   [
+    "6741",
+    "constitution de la fiducie"
+   ]
+  ],
+  "rel": [
+   "7742",
+   "2661"
+  ]
+ },
  "675": {
   "i": "Valeur nette comptable des immobilisations vendues ou mises au rebut, sortie de l'actif.",
   "k": [
@@ -8538,6 +15077,110 @@
    "462"
   ]
  },
+ "6751": {
+  "i": "Valeur nette comptable d'une immobilisation incorporelle sortie de l'actif : logiciel, brevet, fonds de commerce cédé ou abandonné.",
+  "k": [
+   "VNC",
+   "cession logiciel",
+   "cession fonds de commerce",
+   "sortie d'actif",
+   "brevet cédé"
+  ],
+  "nc": [
+   [
+    "7751",
+    "le prix de vente"
+   ],
+   [
+    "6752",
+    "immobilisation corporelle"
+   ]
+  ],
+  "rel": [
+   "7751",
+   "280",
+   "462"
+  ]
+ },
+ "6752": {
+  "i": "Valeur nette comptable d'un bien corporel vendu, mis au rebut ou détruit : véhicule, matériel, immeuble. Valeur brute moins amortissements cumulés.",
+  "k": [
+   "VNC",
+   "vente de véhicule",
+   "mise au rebut",
+   "sortie d'immobilisation",
+   "matériel cédé",
+   "sinistre"
+  ],
+  "nc": [
+   [
+    "7752",
+    "le prix de vente"
+   ],
+   [
+    "6811",
+    "l'amortissement de l'année jusqu'à la cession"
+   ],
+   [
+    "6751",
+    "immobilisation incorporelle"
+   ]
+  ],
+  "rel": [
+   "7752",
+   "281",
+   "462"
+  ]
+ },
+ "6756": {
+  "i": "Valeur d'entrée des immobilisations financières sorties de l'actif : titres de participation cédés, prêt ou dépôt abandonné.",
+  "k": [
+   "cession de titres",
+   "titres de participation",
+   "vente de filiale",
+   "valeur d'origine"
+  ],
+  "nc": [
+   [
+    "7756",
+    "le prix de cession"
+   ],
+   [
+    "667",
+    "titres de placement, à court terme"
+   ],
+   [
+    "664",
+    "perte sur créance liée à une participation"
+   ]
+  ],
+  "rel": [
+   "7756",
+   "261",
+   "462"
+  ]
+ },
+ "6758": {
+  "i": "Valeur comptable des autres éléments d'actif cédés, qui ne sont ni des immobilisations ni des titres de placement.",
+  "k": [
+   "sortie d'actif",
+   "cession diverse",
+   "valeur comptable"
+  ],
+  "nc": [
+   [
+    "6752",
+    "immobilisation corporelle"
+   ],
+   [
+    "667",
+    "titres de placement"
+   ]
+  ],
+  "rel": [
+   "7758"
+  ]
+ },
  "678": {
   "i": "Autres charges exceptionnelles qui ne relèvent ni de la gestion courante ni des cessions.",
   "k": [
@@ -8549,6 +15192,144 @@
     "671",
     "pénalités, amendes et dons"
    ]
+  ]
+ },
+ "6781": {
+  "i": "Supplément payé sur une dette ou un contrat dont le montant est indexé, quand l'indice a joué contre vous.",
+  "k": [
+   "indexation",
+   "clause d'indexation",
+   "indice",
+   "révision de prix"
+  ],
+  "nc": [
+   [
+    "7781",
+    "boni quand l'indice joue en votre faveur"
+   ],
+   [
+    "666",
+    "perte de change"
+   ]
+  ],
+  "rel": [
+   "7781"
+  ]
+ },
+ "6782": {
+  "i": "Lots versés aux porteurs d'obligations à lots émises par l'entreprise. Très rare.",
+  "k": [
+   "obligation à lots",
+   "emprunt obligataire",
+   "tirage au sort"
+  ],
+  "nc": [
+   [
+    "7782",
+    "lots reçus"
+   ],
+   [
+    "6235",
+    "primes remises aux clients en promotion"
+   ]
+  ],
+  "rel": [
+   "163",
+   "7782"
+  ]
+ },
+ "6783": {
+  "i": "Perte constatée quand vous rachetez vos propres actions ou obligations plus cher que leur valeur comptable ou de remboursement.",
+  "k": [
+   "rachat d'actions",
+   "actions propres",
+   "rachat d'obligations",
+   "moins-value rachat"
+  ],
+  "nc": [
+   [
+    "7783",
+    "boni de rachat, le miroir"
+   ],
+   [
+    "667",
+    "cession de titres d'autres sociétés"
+   ]
+  ],
+  "rel": [
+   "277",
+   "505",
+   "7783"
+  ]
+ },
+ "6788": {
+  "i": "Charges exceptionnelles qui n'entrent nulle part ailleurs : charge d'un sinistre, régularisation inhabituelle, coût d'un événement non récurrent.",
+  "k": [
+   "sinistre",
+   "charge inhabituelle",
+   "non récurrent",
+   "exceptionnel divers"
+  ],
+  "nc": [
+   [
+    "658",
+    "charge diverse de gestion courante"
+   ],
+   [
+    "6718",
+    "charge exceptionnelle liée à une opération de gestion"
+   ]
+  ],
+  "rel": [
+   "678"
+  ]
+ },
+ "68": {
+  "i": "Toutes les dotations de l'exercice : amortissements, dépréciations et provisions, ventilées entre exploitation, financier et exceptionnel. Elles alimentent les comptes 28, 29, 39, 49, 59, 15 et 14 ; les reprises passent en 78.",
+  "k": [
+   "dotation",
+   "amortissement",
+   "provision",
+   "dépréciation",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "78",
+    "les reprises, qui annulent des dotations passées"
+   ]
+  ],
+  "rel": [
+   "681",
+   "686",
+   "687",
+   "78"
+  ]
+ },
+ "681": {
+  "i": "Dotations liées à l'activité courante : amortissements des immobilisations, dépréciations des immobilisations, stocks et créances, provisions pour risques et charges d'exploitation. Reprise en 781.",
+  "k": [
+   "dotation",
+   "amortissement",
+   "provision",
+   "dépréciation",
+   "exploitation"
+  ],
+  "nc": [
+   [
+    "686",
+    "dotations financières"
+   ],
+   [
+    "687",
+    "dotations exceptionnelles"
+   ]
+  ],
+  "rel": [
+   "6811",
+   "6815",
+   "6817",
+   "781"
   ]
  },
  "6811": {
@@ -8573,6 +15354,83 @@
    "7811"
   ]
  },
+ "68111": {
+  "i": "Amortissement de l'année sur les immobilisations incorporelles : logiciels, brevets, frais d'établissement. Alimente le 280 ; reprise éventuelle en 78111.",
+  "k": [
+   "amortissement logiciel",
+   "amortissement brevet",
+   "annuité",
+   "dotation"
+  ],
+  "nc": [
+   [
+    "68112",
+    "immobilisations corporelles"
+   ],
+   [
+    "68161",
+    "dépréciation, perte de valeur réversible"
+   ]
+  ],
+  "rel": [
+   "280",
+   "78111",
+   "205"
+  ]
+ },
+ "68112": {
+  "i": "Amortissement de l'année sur les immobilisations corporelles : bâtiments, matériel, véhicules, mobilier, informatique. Alimente le 281 ; reprise éventuelle en 78112.",
+  "k": [
+   "amortissement",
+   "annuité",
+   "dotation",
+   "véhicule",
+   "matériel",
+   "tableau d'amortissement"
+  ],
+  "nc": [
+   [
+    "68111",
+    "immobilisations incorporelles"
+   ],
+   [
+    "68162",
+    "dépréciation, perte de valeur réversible"
+   ],
+   [
+    "6871",
+    "amortissement exceptionnel"
+   ]
+  ],
+  "rel": [
+   "281",
+   "78112",
+   "21"
+  ]
+ },
+ "6812": {
+  "i": "Étalement des charges à répartir inscrites en 481, comme les frais d'émission d'un emprunt : chaque année, la fraction rapportée à l'exercice passe ici.",
+  "k": [
+   "charges à répartir",
+   "étalement",
+   "frais d'émission d'emprunt",
+   "amortissement direct"
+  ],
+  "nc": [
+   [
+    "6811",
+    "amortissement des immobilisations"
+   ],
+   [
+    "6272",
+    "frais d'emprunt passés directement en charge"
+   ]
+  ],
+  "rel": [
+   "481",
+   "4816"
+  ]
+ },
  "6815": {
   "i": "Dotations aux provisions pour risques et charges d'exploitation.",
   "k": [
@@ -8583,6 +15441,73 @@
   "rel": [
    "151",
    "7815"
+  ]
+ },
+ "6816": {
+  "i": "Dépréciation des immobilisations incorporelles et corporelles : perte de valeur constatée à la clôture, non définitive, contrepartie du 29. Reprise en 7816 quand elle n'a plus lieu d'être.",
+  "k": [
+   "dépréciation",
+   "perte de valeur",
+   "test de dépréciation",
+   "valeur actuelle",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6811",
+    "amortissement, usure normale et définitive"
+   ],
+   [
+    "6817",
+    "dépréciation des stocks et créances"
+   ]
+  ],
+  "rel": [
+   "29",
+   "7816",
+   "68161",
+   "68162"
+  ]
+ },
+ "68161": {
+  "i": "Dépréciation d'une immobilisation incorporelle : fonds de commerce, marque, droit au bail qui a perdu de sa valeur. Contrepartie 290 ; reprise en 78161.",
+  "k": [
+   "dépréciation fonds de commerce",
+   "dépréciation marque",
+   "perte de valeur",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "68111",
+    "amortissement d'une immobilisation incorporelle"
+   ]
+  ],
+  "rel": [
+   "290",
+   "78161",
+   "207"
+  ]
+ },
+ "68162": {
+  "i": "Dépréciation d'une immobilisation corporelle : terrain, bâtiment ou matériel dont la valeur actuelle est tombée sous la valeur nette comptable. Contrepartie 291 ; reprise en 78162.",
+  "k": [
+   "dépréciation",
+   "perte de valeur",
+   "valeur actuelle",
+   "terrain",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "68112",
+    "amortissement d'une immobilisation corporelle"
+   ]
+  ],
+  "rel": [
+   "291",
+   "78162",
+   "21"
   ]
  },
  "6817": {
@@ -8596,6 +15521,424 @@
    "491",
    "39",
    "78174"
+  ]
+ },
+ "68173": {
+  "i": "Dépréciation des stocks et en-cours à la clôture : marchandises invendables, matières périmées, valeur de marché inférieure au coût. Contrepartie 39 ; reprise en 78173 à l'exercice suivant.",
+  "k": [
+   "stock déprécié",
+   "invendu",
+   "périmé",
+   "obsolète",
+   "inventaire",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "603",
+    "variation du stock lui-même"
+   ],
+   [
+    "68174",
+    "dépréciation des créances"
+   ]
+  ],
+  "rel": [
+   "39",
+   "78173",
+   "37"
+  ]
+ },
+ "68174": {
+  "i": "Dépréciation des créances douteuses à la clôture, à hauteur de la perte probable hors TVA. Contrepartie 491 ; reprise en 78174 quand la créance est encaissée ou passée en perte.",
+  "k": [
+   "client douteux",
+   "provision client",
+   "impayé",
+   "risque de non-recouvrement",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "654",
+    "créance définitivement perdue"
+   ],
+   [
+    "68173",
+    "dépréciation des stocks"
+   ]
+  ],
+  "rel": [
+   "491",
+   "78174",
+   "416"
+  ]
+ },
+ "686": {
+  "i": "Dotations à caractère financier : amortissement des primes de remboursement d'obligations, provisions financières, dépréciations des titres et créances financières. Reprise en 786.",
+  "k": [
+   "dotation financière",
+   "dépréciation titres",
+   "provision financière",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "681",
+    "dotations d'exploitation"
+   ],
+   [
+    "687",
+    "dotations exceptionnelles"
+   ]
+  ],
+  "rel": [
+   "6865",
+   "6866",
+   "786"
+  ]
+ },
+ "6861": {
+  "i": "Étalement, sur la durée de l'emprunt obligataire, de la prime de remboursement inscrite en 169.",
+  "k": [
+   "prime de remboursement",
+   "emprunt obligataire",
+   "obligations",
+   "étalement"
+  ],
+  "nc": [
+   [
+    "6811",
+    "amortissement des immobilisations"
+   ],
+   [
+    "6812",
+    "charges à répartir"
+   ]
+  ],
+  "rel": [
+   "169",
+   "163"
+  ]
+ },
+ "6865": {
+  "i": "Provisions pour risques financiers : perte de change latente sur une dette ou créance en devises, autre risque financier. Contrepartie 15, reprise en 7865.",
+  "k": [
+   "perte de change latente",
+   "provision change",
+   "écart de conversion",
+   "risque financier",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6815",
+    "provision d'exploitation"
+   ],
+   [
+    "666",
+    "perte de change réalisée"
+   ]
+  ],
+  "rel": [
+   "1515",
+   "476",
+   "7865"
+  ]
+ },
+ "6866": {
+  "i": "Dépréciation des éléments financiers : titres de participation, titres immobilisés, prêts ou titres de placement dont la valeur a baissé. Contrepartie 29 ou 59 ; reprise en 7866.",
+  "k": [
+   "dépréciation titres",
+   "moins-value latente",
+   "filiale en perte",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "667",
+    "moins-value réalisée sur titres de placement"
+   ],
+   [
+    "6756",
+    "valeur des titres cédés"
+   ]
+  ],
+  "rel": [
+   "68662",
+   "68665",
+   "7866"
+  ]
+ },
+ "68662": {
+  "i": "Dépréciation des immobilisations financières : titres de participation, titres immobilisés, prêts, dépôts, dont la valeur d'usage est passée sous le coût. Contrepartie 296 ou 297 ; reprise en 78662.",
+  "k": [
+   "dépréciation participation",
+   "filiale en perte",
+   "titres immobilisés",
+   "prêt douteux",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "68665",
+    "titres de placement"
+   ],
+   [
+    "664",
+    "perte définitive sur créance liée à une participation"
+   ]
+  ],
+  "rel": [
+   "296",
+   "297",
+   "78662",
+   "2961"
+  ]
+ },
+ "68665": {
+  "i": "Dépréciation des valeurs mobilières de placement à la clôture, quand le cours est passé sous le prix d'achat. Contrepartie 590 ; reprise en 78665.",
+  "k": [
+   "dépréciation vmp",
+   "moins-value latente",
+   "sicav",
+   "actions",
+   "cours de bourse",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "667",
+    "moins-value réalisée à la vente"
+   ],
+   [
+    "68662",
+    "titres immobilisés ou de participation"
+   ]
+  ],
+  "rel": [
+   "590",
+   "78665",
+   "503"
+  ]
+ },
+ "6868": {
+  "i": "Autres dotations à caractère financier qui n'entrent dans aucun des sous-comptes précédents.",
+  "k": [
+   "dotation financière diverse",
+   "provision financière"
+  ],
+  "rel": [
+   "786"
+  ]
+ },
+ "687": {
+  "i": "Dotations exceptionnelles : amortissements exceptionnels, provisions réglementées dont les amortissements dérogatoires, provisions et dépréciations exceptionnelles. Reprise en 787.",
+  "k": [
+   "dotation exceptionnelle",
+   "amortissement dérogatoire",
+   "provision réglementée",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "681",
+    "dotations d'exploitation"
+   ],
+   [
+    "686",
+    "dotations financières"
+   ]
+  ],
+  "rel": [
+   "6872",
+   "68725",
+   "6875",
+   "787"
+  ]
+ },
+ "6871": {
+  "i": "Amortissement exceptionnel d'une immobilisation, au-delà du plan, à la suite d'un événement qui réduit définitivement sa valeur ou sa durée d'usage. Alimente le 28.",
+  "k": [
+   "amortissement exceptionnel",
+   "accélération",
+   "obsolescence",
+   "sinistre",
+   "mise au rebut"
+  ],
+  "nc": [
+   [
+    "68725",
+    "supplément purement fiscal, dérogatoire"
+   ],
+   [
+    "6876",
+    "dépréciation exceptionnelle, réversible"
+   ]
+  ],
+  "rel": [
+   "28",
+   "6811"
+  ]
+ },
+ "6872": {
+  "i": "Dotations aux provisions réglementées sur immobilisations, essentiellement les amortissements dérogatoires. Contrepartie 14 ; reprise en 7872.",
+  "k": [
+   "provision réglementée",
+   "amortissement dérogatoire",
+   "fiscal",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6811",
+    "amortissement économique"
+   ]
+  ],
+  "rel": [
+   "142",
+   "145",
+   "7872",
+   "68725"
+  ]
+ },
+ "68725": {
+  "i": "Le supplément d'amortissement fiscal par rapport à l'amortissement économique, quand le fisc autorise un rythme plus rapide. Contrepartie 145 ; reprise en 78725 quand l'amortissement comptable rattrape le fiscal.",
+  "k": [
+   "amortissement dérogatoire",
+   "dégressif",
+   "fiscal",
+   "suramortissement",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6811",
+    "amortissement économique, dans le plan"
+   ],
+   [
+    "6871",
+    "amortissement exceptionnel définitif"
+   ]
+  ],
+  "rel": [
+   "145",
+   "78725",
+   "6811"
+  ]
+ },
+ "6873": {
+  "i": "Dotations aux provisions réglementées sur stocks : hausse des prix, fluctuation des cours. Contrepartie 143 ; reprise en 7873.",
+  "k": [
+   "hausse des prix",
+   "fluctuation des cours",
+   "provision réglementée",
+   "stock"
+  ],
+  "nc": [
+   [
+    "68173",
+    "dépréciation d'un stock qui a perdu de la valeur"
+   ]
+  ],
+  "rel": [
+   "143",
+   "7873"
+  ]
+ },
+ "6874": {
+  "i": "Dotations aux autres provisions réglementées, purement fiscales : provisions pour investissement, plus-values réinvesties, autres provisions prévues par la loi fiscale. Contrepartie 14 ; reprise en 7874.",
+  "k": [
+   "provision réglementée",
+   "provision pour investissement",
+   "avantage fiscal",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6872",
+    "amortissements dérogatoires"
+   ],
+   [
+    "6815",
+    "provision pour un risque réel"
+   ]
+  ],
+  "rel": [
+   "144",
+   "148",
+   "1424",
+   "7874"
+  ]
+ },
+ "6875": {
+  "i": "Provisions pour risques et charges de nature exceptionnelle : restructuration, litige inhabituel, gros sinistre. Contrepartie 15 ; reprise en 7875.",
+  "k": [
+   "restructuration",
+   "provision exceptionnelle",
+   "litige exceptionnel",
+   "plan social",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6815",
+    "provision liée à l'activité courante"
+   ],
+   [
+    "6865",
+    "provision financière"
+   ]
+  ],
+  "rel": [
+   "154",
+   "151",
+   "7875"
+  ]
+ },
+ "6876": {
+  "i": "Dépréciation exceptionnelle d'un actif, hors activité courante : immobilisation, stock ou créance touchée par un événement inhabituel. Contrepartie 29, 39 ou 49 ; reprise en 7876.",
+  "k": [
+   "dépréciation exceptionnelle",
+   "sinistre",
+   "perte de valeur",
+   "événement inhabituel",
+   "clôture"
+  ],
+  "nc": [
+   [
+    "6816",
+    "dépréciation courante d'une immobilisation"
+   ],
+   [
+    "6871",
+    "amortissement exceptionnel, définitif"
+   ]
+  ],
+  "rel": [
+   "29",
+   "39",
+   "49",
+   "7876"
+  ]
+ },
+ "69": {
+  "i": "La participation des salariés et l'impôt sur les bénéfices : ce qui reste à imputer une fois le résultat courant et exceptionnel dégagé.",
+  "k": [
+   "IS",
+   "impôt sociétés",
+   "participation",
+   "impôt sur les bénéfices"
+  ],
+  "nc": [
+   [
+    "635",
+    "autres impôts et taxes, en charges d'exploitation"
+   ]
+  ],
+  "rel": [
+   "691",
+   "695"
   ]
  },
  "691": {
@@ -8624,6 +15967,192 @@
    [
     "444",
     "la dette d'IS au bilan"
+   ]
+  ],
+  "rel": [
+   "444"
+  ]
+ },
+ "6951": {
+  "i": "L'impôt sur les sociétés dû localement sur le résultat de l'exercice : acomptes et solde.",
+  "k": [
+   "IS",
+   "impôt sociétés",
+   "acompte is",
+   "solde is",
+   "liquidation is"
+  ],
+  "nc": [
+   [
+    "6954",
+    "impôt sur les bénéfices payé à l'étranger"
+   ],
+   [
+    "6952",
+    "contribution additionnelle"
+   ],
+   [
+    "6717",
+    "rappel d'un autre impôt"
+   ]
+  ],
+  "rel": [
+   "444"
+  ]
+ },
+ "6952": {
+  "i": "Contribution calculée en plus de l'impôt sur les sociétés, quand une contribution additionnelle ou exceptionnelle est due.",
+  "k": [
+   "contribution additionnelle",
+   "surtaxe",
+   "contribution exceptionnelle",
+   "majoration is"
+  ],
+  "nc": [
+   [
+    "6951",
+    "l'impôt sur les sociétés lui-même"
+   ],
+   [
+    "696",
+    "supplément d'impôt lié aux distributions"
+   ]
+  ],
+  "rel": [
+   "444"
+  ]
+ },
+ "6954": {
+  "i": "Impôt sur les bénéfices payé à un État étranger : retenue à la source sur des revenus de source étrangère, impôt d'une succursale à l'étranger.",
+  "k": [
+   "retenue à la source",
+   "impôt étranger",
+   "succursale",
+   "convention fiscale",
+   "crédit d'impôt étranger"
+  ],
+  "nc": [
+   [
+    "6374",
+    "autres taxes payées à l'étranger"
+   ],
+   [
+    "6951",
+    "impôt dû localement"
+   ]
+  ],
+  "rel": [
+   "444"
+  ]
+ },
+ "696": {
+  "i": "Supplément d'impôt sur les sociétés déclenché par une distribution de dividendes, quand le régime fiscal en prévoit un.",
+  "k": [
+   "distribution",
+   "dividendes",
+   "précompte",
+   "contribution sur distributions"
+  ],
+  "nc": [
+   [
+    "457",
+    "les dividendes eux-mêmes, à payer"
+   ],
+   [
+    "6951",
+    "l'IS sur le résultat"
+   ]
+  ],
+  "rel": [
+   "444",
+   "457"
+  ]
+ },
+ "698": {
+  "i": "Groupes ayant opté pour l'intégration fiscale : les flux d'impôt entre la société mère et ses filiales, en charge ou en produit selon le sens.",
+  "k": [
+   "groupe fiscal",
+   "intégration",
+   "société mère",
+   "filiale",
+   "convention d'intégration"
+  ],
+  "nc": [
+   [
+    "6951",
+    "impôt dû par une société non intégrée"
+   ]
+  ],
+  "rel": [
+   "6981",
+   "6989",
+   "451"
+  ]
+ },
+ "6981": {
+  "i": "Impôt qu'une filiale intégrée verse à la société mère au titre de la convention d'intégration, ou charge d'impôt de groupe supportée par la mère.",
+  "k": [
+   "groupe fiscal",
+   "impôt versé à la mère",
+   "convention d'intégration",
+   "filiale intégrée"
+  ],
+  "nc": [
+   [
+    "6989",
+    "le produit d'intégration, dans l'autre sens"
+   ],
+   [
+    "6951",
+    "IS dû directement au fisc"
+   ]
+  ],
+  "rel": [
+   "451",
+   "444"
+  ]
+ },
+ "6989": {
+  "i": "Produit d'intégration fiscale, au crédit malgré sa racine : économie d'impôt que la mère restitue à une filiale déficitaire, ou impôt reçu de ses filiales.",
+  "k": [
+   "groupe fiscal",
+   "économie d'impôt",
+   "produit d'intégration",
+   "filiale déficitaire",
+   "crédit"
+  ],
+  "nc": [
+   [
+    "6981",
+    "la charge d'intégration"
+   ],
+   [
+    "699",
+    "créance de report en arrière des déficits"
+   ]
+  ],
+  "rel": [
+   "451",
+   "444"
+  ]
+ },
+ "699": {
+  "i": "Créance d'impôt née du report en arrière d'un déficit, quand le régime fiscal l'autorise : elle vient en diminution de la charge d'impôt, au crédit malgré sa racine.",
+  "k": [
+   "carry-back",
+   "report en arrière",
+   "déficit",
+   "créance d'impôt",
+   "crédit"
+  ],
+  "nc": [
+   [
+    "6951",
+    "l'IS dû sur un bénéfice"
+   ],
+   [
+    "6989",
+    "produit d'intégration fiscale"
    ]
   ],
   "rel": [
