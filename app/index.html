@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>PCG de poche</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Plan comptable général de poche : retrouver un compte par racine ou par mot, et savoir ce qu'on y met.">
+<meta name="theme-color" content="#1C74B8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#172230" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="PCG">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app" id="app">
+  <header class="top">
+    <div class="bar">
+      <div class="brand"><b>Plan comptable</b><span>PCG</span></div>
+      <button class="icon-btn" id="themeBtn" aria-label="Changer de thème"></button>
+    </div>
+    <div class="search">
+      <label class="field" id="field">
+        <span id="searchIcon"></span>
+        <input id="q" type="search" inputmode="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+               placeholder="Racine (401) ou mot (loyer, voiture)…" aria-label="Rechercher un compte">
+        <button class="clear" id="clearBtn" type="button" aria-label="Effacer"></button>
+      </label>
+      <button class="pad" id="padBtn" type="button" aria-pressed="false" title="Clavier numérique">123</button>
+    </div>
+    <nav class="chips" id="chips" aria-label="Filtrer par classe"></nav>
+  </header>
+
+  <main class="main" id="main" aria-live="polite"></main>
+
+  <div class="sheet-wrap" id="sheetWrap">
+    <div class="scrim"></div>
+    <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Fiche du compte"></section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="update" id="update" hidden><span>Nouvelle version disponible.</span><button type="button" id="updateBtn">Recharger</button></div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

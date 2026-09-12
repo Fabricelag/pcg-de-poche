@@ -1,0 +1,17 @@
+{
+  "name": "PCG de poche",
+  "short_name": "PCG",
+  "description": "Plan comptable général de poche : retrouver un compte par racine ou par mot, et savoir ce qu'on y met.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F7FA",
+  "theme_color": "#1C74B8",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

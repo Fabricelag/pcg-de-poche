@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Installer PCG de poche</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1C74B8">
+<link rel="icon" href="icons/favicon-64.png" type="image/png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page { max-width: 560px; margin: 0 auto; padding: 22px 18px 40px; }
+  .page h1 { font-size: 22px; margin: 0 0 6px; letter-spacing: -.01em; text-wrap: balance; }
+  .page p { margin: 0 0 12px; color: var(--ink-2); max-width: 60ch; }
+  .qr { display: flex; gap: 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px; margin: 16px 0; }
+  .qr img { width: 132px; height: 132px; border-radius: 8px; background: #fff; }
+  .qr code { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 13px; overflow-wrap: anywhere; color: var(--ink); }
+  .steps { display: grid; gap: 12px; margin-top: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+  .card h2 { font-size: 15px; margin: 0 0 8px; display: flex; align-items: center; gap: 8px; }
+  .card h2 i { font-style: normal; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); padding: 3px 7px; border-radius: 6px; }
+  .card ol { margin: 0; padding-left: 20px; display: grid; gap: 5px; color: var(--ink); }
+  .card ol b { font-weight: 600; }
+  .open { display: inline-flex; align-items: center; justify-content: center; height: 46px; padding: 0 18px; border-radius: 12px; background: var(--accent); color: var(--accent-ink); font-weight: 600; text-decoration: none; margin-top: 18px; }
+  .foot { padding-top: 30px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Installer PCG de poche sur votre téléphone</h1>
+  <p>L'application s'installe depuis le navigateur, sans passer par un magasin d'applications. Une fois installée, elle fonctionne sans réseau et se met à jour toute seule.</p>
+
+  <div class="qr">
+    <img src="icons/qr.png" alt="QR code vers l'application" onerror="this.style.display='none'">
+    <div><p style="margin-bottom:6px">Scannez ce code avec l'appareil photo du téléphone, ou tapez l'adresse :</p><code id="url"></code></div>
+  </div>
+
+  <div class="steps">
+    <section class="card">
+      <h2><i>iPhone</i> Safari</h2>
+      <ol>
+        <li>Ouvrez l'adresse dans <b>Safari</b> (pas dans Chrome ni dans Teams).</li>
+        <li>Touchez le bouton <b>Partager</b>, le carré avec une flèche vers le haut.</li>
+        <li>Choisissez <b>Sur l'écran d'accueil</b>, puis <b>Ajouter</b>.</li>
+      </ol>
+    </section>
+    <section class="card">
+      <h2><i>Android</i> Chrome</h2>
+      <ol>
+        <li>Ouvrez l'adresse dans <b>Chrome</b>.</li>
+        <li>Acceptez la proposition <b>Installer l'application</b> si elle apparaît.</li>
+        <li>Sinon, menu <b>⋮</b> en haut à droite, puis <b>Installer l'application</b> ou <b>Ajouter à l'écran d'accueil</b>.</li>
+      </ol>
+    </section>
+  </div>
+
+  <a class="open" href="./">Ouvrir l'application</a>
+
+  <div class="foot"><img src="logos/lagarde.png" alt="Lagarde Expertise & Conseil"><span>Usage interne</span><img src="logos/ac.png" alt="L'Agent Comptable"></div>
+</div>
+<script>
+  document.getElementById("url").textContent = location.href.replace(/installer\.html.*$/, "");
+</script>
+</body>
+</html>

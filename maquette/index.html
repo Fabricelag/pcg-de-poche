@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<title>PCG de poche</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<div class="stage">
+  <div class="app" id="app">
+    <header class="top">
+      <div class="bar">
+        <div class="brand"><b>Plan comptable</b><span>PCG</span></div>
+        <button class="icon-btn" id="themeBtn" aria-label="Changer de thème"></button>
+      </div>
+      <div class="search">
+        <label class="field" id="field">
+          <span id="searchIcon"></span>
+          <input id="q" type="search" inputmode="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                 placeholder="Racine (401) ou mot (loyer, voiture)…" aria-label="Rechercher un compte">
+          <button class="clear" id="clearBtn" type="button" aria-label="Effacer"></button>
+        </label>
+        <button class="pad" id="padBtn" type="button" aria-pressed="false" title="Clavier numérique">123</button>
+      </div>
+      <nav class="chips" id="chips" aria-label="Filtrer par classe"></nav>
+    </header>
+
+    <main class="main" id="main" aria-live="polite"></main>
+
+    <div class="sheet-wrap" id="sheetWrap">
+      <div class="scrim"></div>
+      <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Fiche du compte"></section>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+  </div>
+  <p class="stage-note">Maquette interactive. Ouvrez cette page sur votre téléphone pour la tester en vraie taille ; sur ordinateur, elle s'affiche dans un cadre au format téléphone.</p>
+</div>
+
+<script src="data-plan.js"></script>
+<script src="data-plan2.js"></script>
+<script src="data-infos.js"></script>
+<script src="app.js"></script>

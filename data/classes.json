@@ -1,0 +1,42 @@
+[
+ {
+  "n": "1",
+  "t": "Comptes de capitaux",
+  "s": "Capital, réserves, résultat, subventions d'investissement, provisions, emprunts"
+ },
+ {
+  "n": "2",
+  "t": "Comptes d'immobilisations",
+  "s": "Incorporelles, corporelles, financières, amortissements et dépréciations"
+ },
+ {
+  "n": "3",
+  "t": "Stocks et en-cours",
+  "s": "Matières, approvisionnements, en-cours, produits, marchandises"
+ },
+ {
+  "n": "4",
+  "t": "Comptes de tiers",
+  "s": "Fournisseurs, clients, personnel, organismes sociaux, État, associés"
+ },
+ {
+  "n": "5",
+  "t": "Comptes financiers",
+  "s": "Valeurs mobilières, banques, caisse, virements internes"
+ },
+ {
+  "n": "6",
+  "t": "Comptes de charges",
+  "s": "Achats, services extérieurs, impôts, personnel, financier, exceptionnel, dotations"
+ },
+ {
+  "n": "7",
+  "t": "Comptes de produits",
+  "s": "Ventes, production, subventions, financier, exceptionnel, reprises"
+ },
+ {
+  "n": "8",
+  "t": "Comptes spéciaux",
+  "s": "Engagements hors bilan, résultat en instance d'affectation, bilan"
+ }
+]
